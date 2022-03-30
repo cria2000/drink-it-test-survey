@@ -1,12 +1,12 @@
 import * as React from 'react';
-import messages from "./messages";
+import messages from "./Constant/messages";
 
 type Props = {
     questionMessage?: string
     firstChoiceMessage?: string
     secondChoiceMessage?: string
 };
-export const QuestionFrame = ({questionMessage, firstChoiceMessage, secondChoiceMessage}: Props) => {
+export const QuestionPage = ({questionMessage, firstChoiceMessage, secondChoiceMessage}: Props) => {
     return (
         <div className="question_frame">
             <div>{questionMessage}</div>

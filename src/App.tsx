@@ -5,7 +5,7 @@ import {MainFrame} from "./MainFrame";
 function App() {
   return (
     <div className="App">
-      <MainFrame />
+       <MainFrame/>
     </div>
   );
 }

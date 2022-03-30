@@ -1,10 +1,10 @@
-.main_frame .change_language .button_change{
+.main_page .change_language .button_change{
     background: url('../svg/Change.svg') no-repeat;
     width: 30px;
     height: 30px;
 }
 
-.main_frame .main_start_button .button_start{
+.main_page .main_start_button .button_start{
     width: 150px;
     height: 50px;
     background-color: var(--main-red);
