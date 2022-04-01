@@ -5,5 +5,10 @@ export default {
     testEnquiry: '테스트 관련 문의는 cria2000@naver.com으로,',
     drinkItEnquiry: '드링킷 관련 문의는 drinkit2021@gmail.com으로',
     prevPage: '이전 페이지로',
-    resultSentence : ({result, decorativeSentence}:{result: string, decorativeSentence: string}) => `당신은 ${decorativeSentence}, ${result}와 닮아있습니다.`
+    resultSentence: ({result, decorativeSentence}:{result: string, decorativeSentence: string}) =>
+        `당신은 ${decorativeSentence}, ${result}와 닮아있습니다.`,
+    noticeNewsLetter: ({result}: {result: string}) => `${result}의 공간이 궁금하신가요?`,
+    linkToNewsLetterSentence: ({result}: {result: string}) => `<${result}> 드링킷 뉴스레터 보러가기`,
+    interestInMore: '더 다양한 술과 공간이 궁금하신가요?',
+    goToSubscribe: '드링킷 뉴스레터 구독하러 가기',
 }

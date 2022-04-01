@@ -1,0 +1,29 @@
+.result_page{
+    width: 400px;
+}
+
+.result_page .result_page_drink_it_link_container{
+    line-height: 1.5;
+}
+
+.result_page .result_page_notifier{
+    font-family: "Eulyoo - SemiBold";
+    font-size: 25pt;
+}
+
+.result_page .result_page_main_content{
+    font-family: "NanumBarunGothic - Light";
+    font-size: 15pt;
+}
+
+.result_page .result_page_news_letter,
+.result_page .result_page_subscribe_link{
+    font-family: "NanumBarunGothic - Light";
+    display: flex;
+    flex-direction: column;
+}
+
+.result_page .result_page_links{
+    color: var(--main-red);
+}
+
