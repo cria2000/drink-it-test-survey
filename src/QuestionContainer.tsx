@@ -17,6 +17,10 @@ export const QuestionContainer = (props: Props) => {
         setCurrentQuestion(currentQuestion + 1)
     }
 
+    const handleClickPrevPageButton = () => {
+        setCurrentQuestion(currentQuestion - 1)
+    }
+
     return (
         <div className="question_container">
             <div className="question_container_progress_number">
@@ -33,7 +37,7 @@ export const QuestionContainer = (props: Props) => {
                 secondOptionMessage={currentQuestionContent?.secondOption}
                 onClickOption={handleClickOption}
             />
-            <button className="question_container_prev_page" ><div className="button_prev"/><div>{messages.prevPage}</div></button>
+            <button className="question_container_prev_page" onClick={handleClickPrevPageButton}><div className="button_prev"/><div>{messages.prevPage}</div></button>
 
         </div>
     );

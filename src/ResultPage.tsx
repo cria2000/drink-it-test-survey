@@ -5,7 +5,7 @@ type Props = {
 };
 export const ResultPage = (props: Props) => {
     return (
-        <div>
+        <div className="result_page">
 
         </div>
     );
