@@ -1,5 +1,6 @@
 .question_container{
     padding: 30px;
+    width: 400px;
 }
 
 .question_container .question_container_progress_number{

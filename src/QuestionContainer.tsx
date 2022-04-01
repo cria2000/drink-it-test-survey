@@ -13,6 +13,9 @@ export const QuestionContainer = (props: Props) => {
     const [currentQuestion, setCurrentQuestion] = useState<number>(1)
     const currentQuestionContent = questionPreset[currentQuestion]
 
+    const handleClickOption = () => {
+        setCurrentQuestion(currentQuestion + 1)
+    }
 
     return (
         <div className="question_container">
@@ -28,6 +31,7 @@ export const QuestionContainer = (props: Props) => {
                 questionMessage={currentQuestionContent?.question}
                 firstOptionMessage={currentQuestionContent?.firstOption}
                 secondOptionMessage={currentQuestionContent?.secondOption}
+                onClickOption={handleClickOption}
             />
             <button className="question_container_prev_page" ><div className="button_prev"/><div>{messages.prevPage}</div></button>
 

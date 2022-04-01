@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './Styles/css/MainPage.css'
 import {MainPage} from "./MainPage";
 import { Route, Routes} from "react-router-dom";
 import {ResultPage} from "./ResultPage";
