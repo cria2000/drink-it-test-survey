@@ -17,11 +17,22 @@
     border-radius: 5px;
 }
 
+.question_container .current_progress_container{
+    position: relative;
+}
+
 .question_container .current_progress{
     height: 12px;
     background-color: var(--main-red);
     border-radius: 5px;
     z-index: 1;
+}
+
+.question_container .current_progress_icon{
+    position: absolute;
+    right: 0px;
+    top: -20px;
+    font-size: 25pt;
 }
 
 .question_container .question_container_bottom_content{

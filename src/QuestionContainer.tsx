@@ -35,7 +35,10 @@ export const QuestionContainer = (props: Props) => {
                 <div className="total_question">{totalQuestionNumber}</div>
             </div>
             <div className="question_container_progress_bar">
-                <div style={{width: currentQuestion * 40}} className="current_progress"/>
+                <div className="current_progress_container" style={{width: currentQuestion * 40 + 25}}>
+                    <div style={{width: currentQuestion * 40}} className="current_progress"/>
+                    <div className="current_progress_icon">🥂</div>
+                </div>
             </div>
             <QuestionPage
                 questionMessage={currentQuestionContent?.question}
@@ -44,7 +47,7 @@ export const QuestionContainer = (props: Props) => {
                 onClickOption={handleClickOption}
             />
             <div className="question_container_bottom_content">
-                <button className="question_container_prev_page" onClick={handleClickPrevPageButton}><div className="button_prev"/><div>{messages.prevPage}</div></button>
+                {currentQuestion > 1 && <button className="question_container_prev_page" onClick={handleClickPrevPageButton}><div className="button_prev"/><div>{messages.prevPage}</div></button> }
                 <img className="question_container_bottom_logo" alt='drink' src={require('./Images/drinkItHeader.png')} />
             </div>
         </div>
