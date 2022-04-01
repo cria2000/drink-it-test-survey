@@ -26,8 +26,8 @@ export const QuestionContainer = (props: Props) => {
             </div>
             <QuestionPage
                 questionMessage={currentQuestionContent?.question}
-                firstChoiceMessage={currentQuestionContent?.firstMessage}
-                secondChoiceMessage={currentQuestionContent?.secondMessage}
+                firstOptionMessage={currentQuestionContent?.firstOption}
+                secondOptionMessage={currentQuestionContent?.secondOption}
             />
             <button className="question_container_prev_page" ><div className="button_prev"/><div>{messages.prevPage}</div></button>
 

@@ -4,15 +4,15 @@ import './Styles/css/QuestionPage.css'
 
 type Props = {
     questionMessage?: string
-    firstChoiceMessage?: string
-    secondChoiceMessage?: string
+    firstOptionMessage?: string
+    secondOptionMessage?: string
 };
-export const QuestionPage = ({questionMessage, firstChoiceMessage, secondChoiceMessage}: Props) => {
+export const QuestionPage = ({questionMessage, firstOptionMessage, secondOptionMessage}: Props) => {
     return (
         <div className="question_page">
             <div className="question_page_question_message">{questionMessage}</div>
-            <button className="question_page_choice_button">{firstChoiceMessage}</button>
-            <button className="question_page_choice_button">{secondChoiceMessage}</button>
+            <button className="question_page_choice_button">{firstOptionMessage}</button>
+            <button className="question_page_choice_button">{secondOptionMessage}</button>
         </div>
     );
 };
