@@ -20,13 +20,13 @@ export const MainPage = (props: Props) => {
             <div className="change_language">
                 <button><div className="button_change"/><div>{strings.eng}</div></button>
             </div>
+            <img className="main_page_header_logo" alt='drink_it_header' src={require('./Images/drinkItHeader.png')} />
             <div className="main_title">
                 <div>{strings.mainTitle}</div>
                 <HighlightSpan originKeyword={messages.whatIsMyDrinkIt} highlightKeyword={strings.drinkIt} />
             </div>
-            <div className="main_start_button">
-                <button className="button_start" onClick={handleClickStartButton}>{messages.startTest}</button>
-            </div>
+            <button className="button_start" onClick={handleClickStartButton}>{messages.startTest}</button>
+
             <div className="main_enquiry_information">
                 <div>{messages.enquiryInformation}</div>
                 <div>{messages.testEnquiry}</div>

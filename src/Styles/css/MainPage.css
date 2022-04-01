@@ -28,23 +28,23 @@
     font-size: 15pt;
 }
 
+.main_page .main_page_header_logo{
+    width: 300px;
+    height: 100px;
+}
+
 .main_page .main_title{
     font-family: "Eulyoo - SemiBold";
     font-size: 25pt;
     height: 40%;
-    min-height: 300px;
+    min-height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.main_page .main_start_button {
-    height: 40%;
-    min-height: 200px;
-}
-
-.main_page .main_start_button .button_start{
+.main_page .button_start{
     width: 300px;
     height: 100px;
     color: white;
@@ -52,6 +52,7 @@
     background: var(--main-red);
     border-radius: 10px;
     font-family: "NanumSquare - Bold";
+    margin: 70px 0 70px 0;
 }
 
 .main_page .main_enquiry_information{
