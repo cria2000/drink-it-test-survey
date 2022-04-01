@@ -1,19 +1,43 @@
 .result_page{
     width: 400px;
-}
-
-.result_page .result_page_drink_it_link_container{
-    line-height: 1.5;
+    padding: 10px;
 }
 
 .result_page .result_page_notifier{
+    position: relative;
     font-family: "Eulyoo - SemiBold";
     font-size: 25pt;
+    white-space: pre-wrap;
+    padding: 10px;
 }
+
+.result_page .result_page_notifier .result_page_notifier_message{
+    z-index: 2;
+}
+
+.result_page .result_page_notifier .result_page_background{
+    position: absolute;
+    top: 80px;
+    color: var(--main-red);
+    font-family: "Eulyoo - SemiBold";
+    font-size: 30pt;
+    opacity: 0.4;
+}
+
+.result_page .result_page_drink_image{
+    width: 200px;
+    height: 120px;
+}
+
+.result_page .result_page_drink_it_link_container{
+    line-height: 1.7;
+}
+
 
 .result_page .result_page_main_content{
     font-family: "NanumBarunGothic - Light";
     font-size: 15pt;
+    padding: 30px 10px 50px 10px;
 }
 
 .result_page .result_page_news_letter,

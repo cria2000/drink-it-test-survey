@@ -12,7 +12,11 @@ export const ResultPage = (props: Props) => {
 
     return (
         <div className="result_page">
-            <div className="result_page_notifier">{messages.resultSentence({result: result?.drinkName, decorativeSentence: result?.decorativeSentence})}</div>
+            <div className="result_page_notifier">
+                <div className="result_page_notifier_message">{messages.resultSentence({result: result?.drinkName, decorativeSentence: result?.decorativeSentence})}</div>
+                <div className="result_page_background">{result?.drinkEnName}</div>
+            </div>
+            <img className="result_page_drink_image" alt='drink' src={require('./Images/picture.png')} />
             <div className="result_page_main_content">{result?.content}</div>
             <div className="result_page_drink_it_link_container">
                 <div className="result_page_news_letter">
