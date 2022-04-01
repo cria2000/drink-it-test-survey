@@ -18,8 +18,7 @@ export const MainPage = (props: Props) => {
     return (
         <div className="main_page">
             <div className="change_language">
-                <button className="button_change" />
-                <div>{strings.eng}</div>
+                <button><div className="button_change"/><div>{strings.eng}</div></button>
             </div>
             <div className="main_title">
                 <div>{strings.mainTitle}</div>

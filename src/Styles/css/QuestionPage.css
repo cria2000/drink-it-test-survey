@@ -1,0 +1,31 @@
+.question_page{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.question_page .question_page_question_message{
+    color: white;
+    min-height: 200px;
+    font-size: 20pt;
+    font-family: "NanumSquare - Bold";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question_page .question_page_choice_button{
+    height: 120px;
+    width: 400px;
+    border: solid 3px var(--main-red);
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 15pt;
+    font-family: "NanumSquare - Bold";
+}
+
+.question_page .question_page_choice_button:hover{
+    background-color: #491212;
+}

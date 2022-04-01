@@ -1,0 +1,44 @@
+.question_container{
+    padding: 30px;
+}
+
+.question_container .question_container_progress_number{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+}
+
+.question_container .question_container_progress_bar{
+    width: 100%;
+    height: 12px;
+    background-color: var(--progress-gray);
+    border-radius: 5px;
+}
+
+.question_container .current_progress{
+    height: 12px;
+    background-color: var(--main-red);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.question_container_prev_page {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+}
+
+
+.question_container_prev_page > .button_prev{
+    background: url('../svg/chevron-left.svg') no-repeat;
+    width: 35px;
+    height: 35px;
+}
+
+.question_container_prev_page > div{
+    color: var(--main-red);;
+    font-family: "NanumSquare - Bold";
+    font-size: 12pt;
+}

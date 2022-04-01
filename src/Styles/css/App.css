@@ -6,6 +6,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .App-logo {
@@ -66,7 +68,6 @@
 button{
   border: none;
   outline: none;
-  font-family: "IBM Plex Sans KR - Regular", sans-serif;
   cursor: pointer;
   transition: ease-out 50ms;
   background: transparent;
@@ -74,4 +75,5 @@ button{
 
 :root{
   --main-red: #FF4401;
+  --progress-gray: #404040;
 }
