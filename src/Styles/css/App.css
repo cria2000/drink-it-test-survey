@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -11,6 +17,26 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+@font-face {
+  font-family: "Eulyoo - SemiBold";
+  src: url("../font/Eulyoo1945-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Eulyoo - Regular";
+  src: url("../font/Eulyoo1945-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "NanumSquare - Bold";
+  src: url("../font/NanumSquareOTF_acB.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "NanumBarunGothic - Light";
+  src: url("../font/NanumBarunGothicLight.ttf") format("opentype");
 }
 
 .App-header {
@@ -35,4 +61,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+button{
+  border: none;
+  outline: none;
+  font-family: "IBM Plex Sans KR - Regular", sans-serif;
+  cursor: pointer;
+  transition: ease-out 50ms;
+  background: transparent;
+}
+
+:root{
+  --main-red: #FF4401;
 }

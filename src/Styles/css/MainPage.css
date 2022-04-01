@@ -1,11 +1,45 @@
+.main_page .change_language{
+    font-family: "Eulyoo - SemiBold";
+    font-size: 15pt;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+}
+
 .main_page .change_language .button_change{
     background: url('../svg/Change.svg') no-repeat;
     width: 30px;
     height: 30px;
 }
 
+.main_page .main_title{
+    font-family: "Eulyoo - SemiBold";
+    font-size: 20pt;
+    height: 40%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_page .main_start_button {
+    height: 40%;
+    min-height: 200px;
+}
+
 .main_page .main_start_button .button_start{
-    width: 150px;
-    height: 50px;
-    background-color: var(--main-red);
+    width: 300px;
+    height: 100px;
+    color: white;
+    font-size: 15pt;
+    background: var(--main-red);
+    border-radius: 10px;
+    font-family: "NanumSquare - Bold";
+}
+
+.main_page .main_enquiry_information{
+    font-family: "NanumBarunGothic - Light";
+    padding-bottom: 100px;
 }
