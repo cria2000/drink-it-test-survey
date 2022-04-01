@@ -13,5 +13,4 @@ export const MainFrame = (props: Props) => {
                 <Route path="/question" element={<QuestionContainer />} />
                 <Route path="/result" element={<ResultPage />} />
             </Routes>
-
 };

@@ -4,6 +4,7 @@ import {QuestionPage} from "./QuestionPage";
 import {questionPreset} from "./QuestionPreset";
 import messages from "./Constant/messages";
 import './Styles/css/QuestionContainer.css'
+import {useNavigate} from "react-router-dom";
 
 type Props = {
 
@@ -13,7 +14,12 @@ export const QuestionContainer = (props: Props) => {
     const [currentQuestion, setCurrentQuestion] = useState<number>(1)
     const currentQuestionContent = questionPreset[currentQuestion]
 
+    const navigation = useNavigate()
+
     const handleClickOption = () => {
+        if(currentQuestion + 1 === totalQuestionNumber){
+            navigation('/result')
+        }
         setCurrentQuestion(currentQuestion + 1)
     }
 
