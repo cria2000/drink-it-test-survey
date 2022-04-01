@@ -11,6 +11,8 @@ export type ResultType = {
     drinkEnName: string
     decorativeSentence: string
     content: string
+    relevantLink: string
+    img: string
 }
 
 export const questionPreset : QuestionType[] = [
@@ -28,5 +30,13 @@ export const questionPreset : QuestionType[] = [
 
 
 export const resultPreset : ResultType[] = [
-    {id: 1, drinkName: '헤밍웨이 다이키리', drinkEnName: "Hemingway Daiquiri", decorativeSentence: '헤밍웨이가 사랑한 술', content: '" For sales, baby shoes, never worn "의 문구로 유명한 헤밍웨이와 같이, 독특한 자신만의 가치관을가지고 있습니다. 통통튀는 매력으로 많은 사람들에게 관심 독차지!자몽즙이 추가된 상큼한 다이키리 한 잔 어떠신가요?'},
+    {
+        id: 1,
+        drinkName: '헤밍웨이 다이키리',
+        drinkEnName: "Hemingway Daiquiri",
+        decorativeSentence: '헤밍웨이가 사랑한 술',
+        content: '" For sales, baby shoes, never worn "의 문구로 유명한 헤밍웨이와 같이, 독특한 자신만의 가치관을가지고 있습니다. 통통튀는 매력으로 많은 사람들에게 관심 독차지!자몽즙이 추가된 상큼한 다이키리 한 잔 어떠신가요?',
+        relevantLink: 'http://naver.com',
+        img: 'picture.png'
+    },
 ]
