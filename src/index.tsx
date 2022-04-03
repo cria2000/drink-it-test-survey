@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
 
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter basename="https://cria2000.github.io/drink-it-test/">
         <React.StrictMode>
             <App />
         </React.StrictMode>
