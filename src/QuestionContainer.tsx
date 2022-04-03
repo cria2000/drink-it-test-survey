@@ -1,10 +1,12 @@
 import * as React from 'react';
 import {useState} from "react";
 import {QuestionPage} from "./QuestionPage";
-import {questionPreset} from "./QuestionPreset";
+import {questionEngPreset, questionPreset} from "./QuestionPreset";
 import messages from "./Constant/messages";
 import './Styles/css/QuestionContainer.css'
 import {useNavigate} from "react-router-dom";
+import { useReactiveVar } from '@apollo/client';
+import {ELangauge, languageVar } from './Cache/cache';
 
 export type SelectedOptionsType = {
     first: { e: number, i: number},
@@ -20,9 +22,10 @@ type Props = {
 };
 export const QuestionContainer = ({selectedOptions, handleSelectedOptions}: Props) => {
     const totalQuestionNumber = 12
+    const isKorean = useReactiveVar(languageVar) === ELangauge.KOREAN
     const [currentQuestion, setCurrentQuestion] = useState<number>(1)
 
-    const currentQuestionContent = questionPreset[currentQuestion]
+    const currentQuestionContent = isKorean ? questionPreset[currentQuestion] : questionEngPreset[currentQuestion]
 
     const navigation = useNavigate()
 

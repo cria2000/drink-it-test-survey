@@ -1,4 +1,5 @@
 export default {
+    mainTitle: '나와 닮은 술과 공간을 알아보자',
     whatIsMyDrinkIt: '내 안의 드링킷🥂은?',
     startTest: 'DITI 테스트 시작하기',
     enquiryInformation: `위 테스트는 정기 뉴스레터 '드링킷'의 내용을 기반으로 제작되었습니다.`,
@@ -11,5 +12,19 @@ export default {
     linkToNewsLetterSentence: ({result}: {result: string}) => `<${result}> 드링킷 뉴스레터 보러가기`,
     interestInMore: '더 다양한 술과 공간이 궁금하신가요?',
     goToSubscribe: '드링킷 뉴스레터 구독하러 가기',
-    recommend: '당신에게 추천드려요'
+    recommend: '당신에게 추천드려요',
+    mainTitleEng: 'Let\'s find out what kind of liquor and space looks like me',
+    whatIsMyDrinkItEng: 'What Is My 🥂 DrinkIt?',
+    startTestEng: 'START DITI TEST',
+    enquiryInformationEng: `The above test was based on the contents of the newsletter "DrinkIt."`,
+    testEnquiryEng: 'Inquiries about testing can be made at cria2000@naver.com',
+    drinkItEnquiryEng: 'Inquiries regarding DrinkIt can be made at drinkit2021@gmail.com',
+    prevPageEng: 'Previous Page',
+    resultSentenceEng: ({result, decorativeSentence}:{result: string, decorativeSentence: string}) =>
+        `How About ${decorativeSentence} to \n ${result}?`,
+    noticeNewsLetterEng: ({result}: {result: string}) => `Do you want to know more about ${result}'s space?`,
+    linkToNewsLetterSentenceEng: ({result}: {result: string}) => `<${result}> Going to see the Drinkit Newsletter`,
+    interestInMoreEng: 'Do you want to know more variety of drinks and spaces?',
+    goToSubscribeEng: 'Subscribe to the Drinkit Newsletter',
+    recommendEng: 'I recommend it to you'
 }
