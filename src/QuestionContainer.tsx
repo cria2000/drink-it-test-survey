@@ -19,7 +19,7 @@ type Props = {
     handleSelectedOptions: (newSelectedOptions: SelectedOptionsType) => void
 };
 export const QuestionContainer = ({selectedOptions, handleSelectedOptions}: Props) => {
-    const totalQuestionNumber = 10
+    const totalQuestionNumber = 12
     const [currentQuestion, setCurrentQuestion] = useState<number>(1)
 
     const currentQuestionContent = questionPreset[currentQuestion]

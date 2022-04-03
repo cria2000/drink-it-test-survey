@@ -20,7 +20,6 @@ export const ResultPage = ({selectedOptions}: Props) => {
     const result = resultPreset[resultIndex ?? 0]
 
 
-
     // useEffect(() => {
     //     console.log(process.env["REACT_APP_KAKAO "])
     //     window?.Kakao?.init?.(process.env.REACT_KAKO)
@@ -51,16 +50,22 @@ export const ResultPage = ({selectedOptions}: Props) => {
 
     return (
         <div className="result_page">
+            <div className="result_page_content">
             <div className="result_page_notifier">
                 <div className="result_page_notifier_message">{messages.resultSentence({result: result?.drinkName, decorativeSentence: result?.spaceName})}</div>
                 <div className="result_page_background">{result?.drinkEnName}</div>
             </div>
-            { result?.img && <img className="result_page_drink_image" alt='drink' src={require(`./Images/${result?.img}`)} /> }
+            { result?.drinkImg && <img className="result_page_drink_image" alt='drink' src={require(`./Images/${result?.drinkImg}`)} /> }
             <div className="result_page_main_content">{result?.content}</div>
+            <div className='result_page_recommend'>
+                <div className="recommend_message">{messages.recommend}</div>
+                <div>{`<${result?.recommendSpace}>의 ${result?.recommendDrink}`}</div>
+                { result?.spaceImg && <img className="result_page_space_image" alt='space' src={require(`./Images/${result?.spaceImg}`)} /> }
+            </div>
             <div className="result_page_drink_it_link_container">
                 <div className="result_page_news_letter">
-                    <span>{messages.noticeNewsLetter({result: result?.drinkName})}</span>
-                    <a className="result_page_links" href={result?.relevantLink}>{messages.linkToNewsLetterSentence({result: result?.drinkName})}</a>
+                    <span>{messages.noticeNewsLetter({result: result?.recommendSpace})}</span>
+                    <a className="result_page_links" href={result?.relevantLink}>{messages.linkToNewsLetterSentence({result: result?.recommendSpace})}</a>
                 </div>
                 <div className="result_page_subscribe_link">
                     <span>{messages.interestInMore}</span>
@@ -68,6 +73,7 @@ export const ResultPage = ({selectedOptions}: Props) => {
                 </div>
             </div>
             <button className='result_page_share_button'>공유하기</button>
+            </div>
         </div>
     );
 };

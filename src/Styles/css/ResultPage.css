@@ -1,6 +1,23 @@
 .result_page{
-    width: 400px;
+    width: 100vw;
+    height: 100vh;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+
+.result_page .result_page_content{
+    width: 400px;
+    overflow: visible;
+}
+
+.result_page .result_page_content {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.result_page .result_page_content::-webkit-scrollbar {
+    display: none;
 }
 
 .result_page .result_page_notifier{
@@ -17,7 +34,7 @@
 
 .result_page .result_page_notifier .result_page_background{
     position: absolute;
-    top: 80px;
+    top: 30px;
     color: var(--main-red);
     font-family: "Eulyoo - SemiBold";
     font-size: 30pt;
@@ -25,8 +42,8 @@
 }
 
 .result_page .result_page_drink_image{
-    width: 200px;
-    height: 120px;
+    width: 350px;
+    height: 200px;
 }
 
 .result_page .result_page_drink_it_link_container{
@@ -39,6 +56,27 @@
     font-size: 15pt;
     padding: 30px 10px 50px 10px;
 }
+
+
+.result_page .result_page_recommend{
+    min-height: 300px;
+    font-size: 13pt;
+    border: solid 2px var(--main-red);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.result_page .recommend_message{
+    font-size: 15pt;
+    padding: 10px;
+}
+
+.result_page .result_page_space_image{
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+}
+
 
 .result_page .result_page_news_letter,
 .result_page .result_page_subscribe_link{
