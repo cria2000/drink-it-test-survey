@@ -1,7 +1,6 @@
 .result_page{
     width: 100vw;
     height: 100vh;
-    padding: 10px;
     display: flex;
     justify-content: center;
     overflow: auto;
@@ -16,6 +15,7 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
 .result_page .result_page_content::-webkit-scrollbar {
     display: none;
 }
@@ -25,7 +25,7 @@
     font-family: "Eulyoo - SemiBold";
     font-size: 25pt;
     white-space: pre-wrap;
-    padding: 10px;
+    padding: 50px 0 30px 0;
 }
 
 .result_page .result_page_notifier .result_page_notifier_message{
@@ -34,7 +34,7 @@
 
 .result_page .result_page_notifier .result_page_background{
     position: absolute;
-    top: 30px;
+    top: 70px;
     color: var(--main-red);
     font-family: "Eulyoo - SemiBold";
     font-size: 30pt;
@@ -90,5 +90,6 @@
 }
 
 .result_page .result_page_share_button{
-    color: var(--main-red);
+    color: #F9E000;
+    padding: 20px 0 100px 0;
 }

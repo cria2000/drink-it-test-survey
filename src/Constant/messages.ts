@@ -6,7 +6,7 @@ export default {
     drinkItEnquiry: '드링킷 관련 문의는 drinkit2021@gmail.com으로',
     prevPage: '이전 페이지로',
     resultSentence: ({result, decorativeSentence}:{result: string, decorativeSentence: string}) =>
-        `${decorativeSentence}에서,\n ${result} 한 잔 어떠신가요?`,
+        `${decorativeSentence}에서,\n ${result} 한 잔 \n어떠신가요?`,
     noticeNewsLetter: ({result}: {result: string}) => `${result}의 공간이 궁금하신가요?`,
     linkToNewsLetterSentence: ({result}: {result: string}) => `<${result}> 드링킷 뉴스레터 보러가기`,
     interestInMore: '더 다양한 술과 공간이 궁금하신가요?',

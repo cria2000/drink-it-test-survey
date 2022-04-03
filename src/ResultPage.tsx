@@ -16,37 +16,34 @@ export const ResultPage = ({selectedOptions}: Props) => {
 
     const resultIndex = Array.from(resultMap?.keys())?.findIndex(value => value?.first === selectedFirst && value?.second === selectedSecond
     && value?.third === selectedThird && value?.fourth === selectedFourth)
-    // ({first: selectedFirst, second: selectedSecond, third: selectedThird, fourth: selectedFourth})
     const result = resultPreset[resultIndex ?? 0]
 
 
-    // useEffect(() => {
-    //     console.log(process.env["REACT_APP_KAKAO "])
-    //     window?.Kakao?.init?.(process.env.REACT_KAKO)
-    //     console.log(window?.Kakao?.isInitialized())
-    // }, [])
-
-    const sendKakaoMessage = () => {
-        window?.Kakao?.Link?.sendDefault({
+    useEffect(() => {
+        if(!window?.Kakao?.isInitialized) window?.Kakao?.init?.(process.env["REACT_APP_KAKAO"])
+        window?.Kakao?.Link?.createDefaultButton({
+            container: '#kakao-link-btn',
             objectType: 'feed',
             content: {
                 title: '나의 DrinkIt은 무엇일까?',
                 description: '당신과 잘 어울리는 공간과 술을 알아보세요!',
-                imageUrl: '',
+                imageUrl: './Images/drinkIt.png',
                 link:{
-                    webUrl: '',
+                    webUrl: 'http://localhost:3000',
                 }
             },
             buttons: [
                 {
-                    titles: '함께 해보기',
+                    title: '알아보러가자!',
                     link: {
-                        webUrl: '',
+                        webUrl: 'http://localhost:3000',
                     }
                 }
             ]
         })
-    }
+
+    }, [])
+
 
     return (
         <div className="result_page">
@@ -72,7 +69,7 @@ export const ResultPage = ({selectedOptions}: Props) => {
                     <a className="result_page_links" href={`https://page.stibee.com/subscriptions/148567`}>{messages?.goToSubscribe}</a>
                 </div>
             </div>
-            <button className='result_page_share_button'>공유하기</button>
+            <button className='result_page_share_button' id='kakao-link-btn'>카카오톡으로 공유하기</button>
             </div>
         </div>
     );
