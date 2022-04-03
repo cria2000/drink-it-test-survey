@@ -56,7 +56,8 @@ export const ResultPage = ({selectedOptions}: Props) => {
             <div className="result_page_main_content">{result?.content}</div>
             <div className='result_page_recommend'>
                 <div className="recommend_message">{messages.recommend}</div>
-                <div>{`<${result?.recommendSpace}>의 ${result?.recommendDrink}`}</div>
+                <div className="recommend_space_drink">{`<${result?.recommendSpace}>의 ${result?.recommendDrink}`}</div>
+                <div className="recommend_space_address">{result?.spaceAddress}</div>
                 { result?.spaceImg && <img className="result_page_space_image" alt='space' src={require(`./Images/${result?.spaceImg}`)} /> }
             </div>
             <div className="result_page_drink_it_link_container">

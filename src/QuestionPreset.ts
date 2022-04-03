@@ -14,6 +14,7 @@ export type ResultType = {
     drinkName: string
     drinkEnName: string
     spaceName: string
+    spaceAddress: string
     content: string
     recommendDrink: string
     recommendSpace: string
@@ -142,6 +143,85 @@ export const questionPreset : QuestionType[] = [
     }
 ]
 
+
+export const questionEngPreset : QuestionType[] = [
+    {id: 0, question: 'What do you think about going on a roller coaster that looks really scary and shaking in the front seat?',
+        firstOption: 'Wow, that must be scary. The ride won\'t stop suddenly with us hanging upside down, will it? I heard other rides were like that last time.',
+        secondOption: 'It\'s so scary! The spring of the chair suddenly bounces up and I fly away, and Gulliver shows up and grabs me. Will Gulliver\'s hands be soft?',
+        onClickFirstOption: onClickS,
+        onClickSecondOption: onClickN
+    },
+    {id: 1, question: '수업 시간에 뉴턴의 공식에 대해서 배우고 있다.',
+        firstOption: '대체 무슨 소리인지 모르겠지만 일단 외워보자',
+        secondOption: '이게 왜 이렇게 나왔지? 근데 뉴턴은 사과 맞았을 때 아팠을까?',
+        onClickFirstOption: onClickS,
+        onClickSecondOption: onClickN
+    },
+    {id: 2, question: '하루동안 해야 하는 일이 주어졌을 때, 당신이 선호하는 업무는?',
+        firstOption: '8시간 동안 단 한 마디도 하지 않고 혼자서 처리할 수 있는 게 좋아!',
+        secondOption: '8시간 내내 팀원들과 회의하며 처리할 수 있는 게 좋아!',
+        onClickFirstOption: onClickI,
+        onClickSecondOption: onClickE
+    },
+    {id: 3, question: '과제를 하고 있을 때 당신의 생각은?',
+        firstOption: '과제 너무 어려운데, 이런 식으로 과제 어서 해야겠다.(제출 일주일 전) ',
+        secondOption: '과제 너무 어려운데, 이런 식으로 과제 어서 해야겠다.(제출 7시간 전)',
+        onClickFirstOption: onClickJ,
+        onClickSecondOption: onClickP
+    },
+    {id: 4, question: '그저 집 앞을 걷는 것만으로도 여행이 될 수 있어요’라는 말을 들으면,',
+        firstOption: '집 앞을 걷는 건 그냥 집 앞 산책이지 어떻게 여행이야?',
+        secondOption: '멋진 말이다.. 집 앞을 걷는 것도 여행이라고 생각할 수 있다니!',
+        onClickFirstOption: onClickT,
+        onClickSecondOption: onClickF
+    },
+    {id: 5, question: '계획적인 여행과 무계획이 계획인 여행 중 당신의 여행 스타일은?',
+        firstOption: '계획적인 여행을 갈 것인지, 무계획으로 갈 것인지를 생각해보고 그에 따라 계획을 세워봐야지!',
+        secondOption: '여행은 자고로 자유 여행이지!',
+        onClickFirstOption: onClickJ,
+        onClickSecondOption: onClickP
+    },
+    {id: 6, question: '내가 모범생이라면,',
+        firstOption: '이 망할 놈의 암기만 하는 한국의 교육, 내가 빨리 대단한 사람이 되어서 이걸 싹 다 갈아엎겠어',
+        secondOption: '일단 1등을 해서 원하는 대학에 간다음에, 교육청에 들어가서…',
+        onClickFirstOption: onClickN,
+        onClickSecondOption: onClickS
+    },
+    {id: 7, question: '이제부터라도 건강을 챙겨야겠다, 어떤 운동을 해볼까?',
+        firstOption: '다른 사람들과 다 함께 즐길 수 있는 배드민턴이 좋겠어!',
+        secondOption: '나는 혼자서 노래 들으면서 조깅을 할래!',
+        onClickFirstOption: onClickE,
+        onClickSecondOption: onClickI
+    },
+    {id: 8, question: '친구가 약속 시간에 늦었다. 이 때 친구에게 받고 싶은 사과는?',
+        firstOption: '합당한 이유와 간단한 사과면 충분하지!',
+        secondOption: '변명하지 말고 정말 진심으로 사과하고 미안해하면 괜찮아!',
+        onClickFirstOption: onClickT,
+        onClickSecondOption: onClickF
+    },
+    {id: 9, question: '이따 퇴근할 때 뭐 사가지?',
+        firstOption:  '가다가 맛있어 보이는 거 사가야겠다!',
+        secondOption: '저번에 먹었던 그 가게 아마 7시에 문 닫을 테니까 6시에 나가서 역 가는 길에 사가야겠다!',
+        onClickFirstOption: onClickP,
+        onClickSecondOption: onClickJ
+    },
+    {id: 10, question: '친구가 ‘퇴근하는데 역에서 진짜 맛있는 냄새가 난다. 너무 배고파ㅠㅠ’라고 할 때,',
+        firstOption: '역에 대부분 빵이나 김밥 같은 거 팔지 않나? 그거 사가!',
+        secondOption:'진짜 지금 시간에 너무 배고프겠다 ㅠㅠ 나도 맨날 역 지나갈 때 맛있는 냄새에 괴로워ㅠ',
+        onClickFirstOption: onClickS,
+        onClickSecondOption: onClickN
+
+    },
+    {id: 11, question: '퇴근 후, 술 한 잔이 하고 싶어 바에 들렀다. 옆 테이블에도 혼술을 하는 사람이 있는데,',
+        firstOption: '저 분도 심심해보이는데, 한 번 말 걸어볼까?',
+        secondOption:'저 분도 혼술하시네! 나만 혼술하는 게 아니라 다행이다. 설마 말 걸진 않겠지?',
+        onClickFirstOption: onClickE,
+        onClickSecondOption: onClickI
+
+    }
+]
+
+
 export enum EResult {
     E,
     I,
@@ -180,6 +260,7 @@ export const resultPreset : ResultType[] = [
         drinkName: '매혹적인 칵테일',
         drinkEnName: "Jack Rose",
         spaceName: '화려한 공간',
+        spaceAddress: 'ᑯ 서울 서초구 반포대로28길 56-3 지하 1층',
         content: '화려하고 커다란 샹들리에가 있는 공간에서 달콤하고 매혹적인 당신을 닮은 칵테일 어떠세요?',
         recommendDrink: '잭 로즈',
         recommendSpace: '코트룸',
@@ -192,6 +273,7 @@ export const resultPreset : ResultType[] = [
         drinkName: '기분 좋은 산미의 와인',
         drinkEnName: "Natural Orange",
         spaceName: '밝고 쾌활한 공간',
+        spaceAddress: 'ᑯ 서울 중구 창경궁로1길 38 4층',
         content: '스포트라이트를 즐기는 당신처럼 마치 파리에 온 듯한 밝고 쾌활한 공간에서 기분 좋은 산미가 함께하는 와인 한 잔 어떠세요?',
         recommendDrink: '내추럴 오렌지',
         recommendSpace: '원형들',
@@ -204,6 +286,7 @@ export const resultPreset : ResultType[] = [
         drinkName: '깊은 위스키',
         drinkEnName: "Cuvee Cask",
         spaceName: '깔끔한 공간',
+        spaceAddress: 'ᑯ 서울 서초구 반포대로28길 56-3 지하 1층',
         content: '천장 높이까지 깔끔하게 정리되어 있는 공간에서 깊고 복합적인 풍미를 구체적으로 느낄 수 있는 위스키 한 잔 어떠세요?',
         recommendDrink: '뀌베 캐스크',
         recommendSpace: '코트룸',
@@ -216,6 +299,7 @@ export const resultPreset : ResultType[] = [
         drinkName: '상큼한 와인',
         drinkEnName: 'Kuehling Gillot \nNierstein Riesling Trocken',
         spaceName: `날씨 좋은 \n야외의 공간`,
+        spaceAddress: 'ᑯ 서울특별시 용산구 한강대로40길 19-8 1층',
         content: '날씨가 좋은 봄 날 야외에서 즐길 수 있는 상큼한 와인 한 잔 어떠세요? ',
         recommendDrink: '니어슈타인 리슬링',
         recommendSpace: '낫투길티',
@@ -228,6 +312,7 @@ export const resultPreset : ResultType[] = [
         drinkName: '임금의 술 왕주',
         drinkEnName: "King's Drink",
         spaceName: `정겨운 이야기가 \n가득한 공간`,
+        spaceAddress: 'ᑯ 서울 마포구 서강로9길 60',
         content: '카리스마와 충만한 열정을 지닌 당신처럼 열정과 정겨운 이야기가 가득한 공간에서 조선 왕실에서 궁중 비법으로 전수된 임금이 마시던 왕주 어떠세요?',
         recommendDrink: '왕주',
         recommendSpace: '산울림 1992',
@@ -240,6 +325,7 @@ export const resultPreset : ResultType[] = [
         drinkName: '달콤한 칵테일',
         drinkEnName: "Banana",
         spaceName: '파리를 닮은 공간',
+        spaceAddress: 'ᑯ 서울 중구 창경궁로1길 38 4층',
         content: '활발하면서도 인정이 많은 당신, 마치 파리에 온 듯하게 자유롭게 세상을 바라볼 수 있는 넓은 통 유리창이 함께하는 공간에서 달콤한 칵테일 한 잔 어떠세요?',
         recommendDrink: '바나나',
         recommendSpace: '원형들',
@@ -252,6 +338,7 @@ export const resultPreset : ResultType[] = [
         drinkName: '묵직한 칵테일',
         drinkEnName: "Mr. Carmen Negroni",
         spaceName: `'킹스맨'의 공간`,
+        spaceAddress: 'ᑯ 서울 마포구 와우산로15길',
         content: '당신처럼 카리스마있는 리더 \'킹스맨\'이 있던 공간에서 묵직하고 강한 바디감의 칵테일 어떠세요?\n',
         recommendDrink: '미스터 카르멘 네그로니',
         recommendSpace: '디스틸',
@@ -263,7 +350,8 @@ export const resultPreset : ResultType[] = [
         id: 7,
         drinkName: '내추럴 와인',
         drinkEnName: 'Natural \nWhite Wine',
-        spaceName: `무심한듯 친절한 공간`,
+        spaceName: `무심한 듯 친절한 공간`,
+        spaceAddress: 'ᑯ 서울 관악구 봉천동 1625-16 3층',
         content: '" For sales, baby shoes, never worn "의 문구로 유명한 헤밍웨이와 같이, 독특한 자신만의 가치관을가지고 있습니다. 통통튀는 매력으로 많은 사람들에게 관심 독차지!자몽즙이 추가된 상큼한 다이키리 한 잔 어떠신가요?',
         recommendDrink: '내추럴 화이트 와인',
         recommendSpace: '낙성',
@@ -276,6 +364,7 @@ export const resultPreset : ResultType[] = [
         drinkName: '호불호 없는 맥주',
         drinkEnName: "Triporteur Belgian Oak",
         spaceName: '적당히 시끄러운 공간',
+        spaceAddress: 'ᑯ 서울 종로구 동숭3길 16',
         content: '너무 조용하지도, 너무 시끄럽지도 않은, 적당히 조용하고 적당히 시끄러운 공간에서 호불호 없이 마실 수 있는 달달한 맥주 한 잔 어떠세요?',
         recommendDrink: '트리포터 벨지안 오크',
         recommendSpace: '수도원',
@@ -288,6 +377,7 @@ export const resultPreset : ResultType[] = [
         drinkName: '바흐의 음악을 곁들인 와인',
         drinkEnName: 'Geyser \npeak cabernet sauvignon',
         spaceName: '감각적인 공간',
+        spaceAddress: 'ᑯ 강남구 도산대로 27길 21',
         content: '다양한 아이디어와 다채로우면서도 감각적인 당신, 바흐의 음악을 들으며 와인 한 잔으로 영감을 받아가는 건 어떠세요?',
         recommendDrink: '가이서 픽 까베르네 소비뇽',
         recommendSpace: '몽크투바흐',
@@ -300,6 +390,7 @@ export const resultPreset : ResultType[] = [
         drinkName: '담백한 막걸리',
         drinkEnName: 'Song Myungseop\n Rice Wine',
         spaceName: '차분한 공간',
+        spaceAddress: 'ᑯ 서울 강남구 언주로168길 22 1층',
         content: '차분하고 조용한 공간에서 담백한 막걸리 한 잔 어떠세요?',
         recommendDrink: '송명섭 막걸리',
         recommendSpace: '묵전',
@@ -312,6 +403,7 @@ export const resultPreset : ResultType[] = [
         drinkName: '새로운 하이볼',
         drinkEnName: "Joseon Highball",
         spaceName: '다양한 만남의 공간',
+        spaceAddress: 'ᑯ 서울 마포구 서강로9길 60',
         content: '주변을 탐색하기 좋아하는 당신에게 딱 맞는 다양한 사람들을 만날 수 있는 공간에서, 새로운 하이볼 한 잔 어떠세요?',
         recommendDrink: '조선 하이볼',
         recommendSpace: '산울림 1992',
@@ -324,6 +416,7 @@ export const resultPreset : ResultType[] = [
         drinkName: '강한 신념의 겨울 소주',
         drinkEnName: "Winter Soju",
         spaceName: '사색의 공간',
+        spaceAddress: 'ᑯ 서울 영등포구 도림로 435 성문빌딩 1층',
         content: '주방장과 함께 이야기를 나눌 수 있는 카운터석과 생각을 비우고 혼자만의 시간을 가질 수 있는 사색의 공간에서, 당신의 강한 신념처럼 오랜 시간 공들여 만들어지는 겨울소주 어떠세요?',
         recommendDrink: '겨울소주',
         recommendSpace: '사적공간',
@@ -336,6 +429,7 @@ export const resultPreset : ResultType[] = [
         drinkName: '과일향의 위스키',
         drinkEnName: "Glanfidic",
         spaceName: '클래식 음악의 공간',
+        spaceAddress: 'ᑯ 강남구 도산대로 27길 21',
         content: '감성적이고 깊은 통찰력을 지닌 당신, 술과 음악을 사랑한다면 클래식 감상회를 즐길 수 있는 공간에서 약간의 과일향과 함께 즐길 수 있는 위스키 한 잔 어떠세요?',
         recommendDrink: '글렌피딕',
         recommendSpace: '몽크투바흐',
@@ -348,6 +442,7 @@ export const resultPreset : ResultType[] = [
         drinkName: '다양한 레이어의 칵테일',
         drinkEnName: "Rosa Paradiso",
         spaceName: '클래식한 공간',
+        spaceAddress: 'ᑯ 서울 마포구 와우산로15길',
         content: '" For sales, baby shoes, never worn "의 문구로 유명한 헤밍웨이와 같이, 독특한 자신만의 가치관을가지고 있습니다. 통통튀는 매력으로 많은 사람들에게 관심 독차지!자몽즙이 추가된 상큼한 다이키리 한 잔 어떠신가요?',
         recommendDrink: '로사 파라디소',
         recommendSpace: '디스틸',
@@ -360,6 +455,7 @@ export const resultPreset : ResultType[] = [
         drinkName: '사케',
         drinkEnName: "春霞 純米酒 赤ラベル",
         spaceName: '소박한 공간',
+        spaceAddress: 'ᑯ 서울 영등포구 도림로 435 성문빌딩 1층',
         content: '혼자 사색을 즐길 수 있는 아늑하고 소박한 공간에서 조금씩 음미하며 마실 수 있는 사케 어떠세요? ',
         recommendDrink: '사케',
         recommendSpace: '사적공간',

@@ -82,4 +82,6 @@ button:active{
 :root{
   --main-red: #FF4401;
   --progress-gray: #404040;
+  --font-gray: #BCB8B8;
+  --kakao-yellow: #F9E000;
 }
