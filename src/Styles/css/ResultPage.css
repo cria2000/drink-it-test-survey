@@ -51,3 +51,6 @@
     color: var(--main-red);
 }
 
+.result_page .result_page_share_button{
+    color: var(--main-red);
+}

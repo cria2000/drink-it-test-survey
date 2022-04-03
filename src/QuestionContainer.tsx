@@ -6,12 +6,22 @@ import messages from "./Constant/messages";
 import './Styles/css/QuestionContainer.css'
 import {useNavigate} from "react-router-dom";
 
-type Props = {
+export type SelectedOptionsType = {
+    first: { e: number, i: number},
+    second: { s: number, n: number},
+    third: {f: number, t: number},
+    fourth: {p: number, j: number}
 
+}
+
+type Props = {
+    selectedOptions: SelectedOptionsType
+    handleSelectedOptions: (newSelectedOptions: SelectedOptionsType) => void
 };
-export const QuestionContainer = (props: Props) => {
+export const QuestionContainer = ({selectedOptions, handleSelectedOptions}: Props) => {
     const totalQuestionNumber = 10
     const [currentQuestion, setCurrentQuestion] = useState<number>(1)
+
     const currentQuestionContent = questionPreset[currentQuestion]
 
     const navigation = useNavigate()
@@ -45,6 +55,8 @@ export const QuestionContainer = (props: Props) => {
                 firstOptionMessage={currentQuestionContent?.firstOption}
                 secondOptionMessage={currentQuestionContent?.secondOption}
                 onClickOption={handleClickOption}
+                onClickFirstOption={currentQuestionContent?.onClickFirstOption?.({selectedOptions: selectedOptions, setSelectedOptions: handleSelectedOptions})}
+                onClickSecondOption={currentQuestionContent?.onClickSecondOption?.({selectedOptions: selectedOptions, setSelectedOptions: handleSelectedOptions})}
             />
             <div className="question_container_bottom_content">
                 {currentQuestion > 1 && <button className="question_container_prev_page" onClick={handleClickPrevPageButton}><div className="button_prev"/><div>{messages.prevPage}</div></button> }
