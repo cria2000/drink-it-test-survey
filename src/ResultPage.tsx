@@ -24,7 +24,6 @@ export const ResultPage = ({selectedOptions}: Props) => {
     && value?.third === selectedThird && value?.fourth === selectedFourth)
     const result = resultPresetValue[resultIndex ?? 0]
 
-
     useEffect(() => {
         if(!window?.Kakao?.isInitialized) window?.Kakao?.init?.(process.env["REACT_APP_KAKAO"])
         window?.Kakao?.Link?.createDefaultButton({

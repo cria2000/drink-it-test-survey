@@ -23,7 +23,7 @@ type Props = {
 export const QuestionContainer = ({selectedOptions, handleSelectedOptions}: Props) => {
     const totalQuestionNumber = 12
     const isKorean = useReactiveVar(languageVar) === ELangauge.KOREAN
-    const [currentQuestion, setCurrentQuestion] = useState<number>(1)
+    const [currentQuestion, setCurrentQuestion] = useState<number>(0)
 
     const currentQuestionContent = isKorean ? questionPreset[currentQuestion] : questionEngPreset[currentQuestion]
 
@@ -40,10 +40,11 @@ export const QuestionContainer = ({selectedOptions, handleSelectedOptions}: Prop
         setCurrentQuestion(currentQuestion - 1)
     }
 
+
     return (
         <div className="question_container">
             <div className="question_container_progress_number">
-                <div className="current_question">{currentQuestion}</div>
+                <div className="current_question">{currentQuestion + 1}</div>
                 /
                 <div className="total_question">{totalQuestionNumber}</div>
             </div>
@@ -62,7 +63,7 @@ export const QuestionContainer = ({selectedOptions, handleSelectedOptions}: Prop
                 onClickSecondOption={currentQuestionContent?.onClickSecondOption?.({selectedOptions: selectedOptions, setSelectedOptions: handleSelectedOptions})}
             />
             <div className="question_container_bottom_content">
-                {currentQuestion > 1 && <button className="question_container_prev_page" onClick={handleClickPrevPageButton}><div className="button_prev"/><div>{messages.prevPage}</div></button> }
+                {/*{currentQuestion > 1 && <button className="question_container_prev_page" onClick={handleClickPrevPageButton}><div className="button_prev"/><div>{messages.prevPage}</div></button> }*/}
                 <img className="question_container_bottom_logo" alt='drink' src={require('./Images/drinkItHeader.png')} />
             </div>
         </div>

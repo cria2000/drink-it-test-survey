@@ -558,7 +558,7 @@ export const resultEngPreset : ResultType[] = [
         drinkName: 'Pleasant sour wine',
         drinkEnName: "Natural Orange",
         spaceName: 'Bright and Cheerful space',
-        spaceAddress: 'ᑯ 서울 중구 창경궁로1길 38 4층',
+        spaceAddress: 'ᑯ 4th floor, 38 Changgyeonggung-ro 1-gil, Jung-gu, Seoul',
         content: `🥂 It's fun! If there are people who dance on the spot? That's you. You are born to be an entertainer. \n
         🥂 It has an irresistible charm that cannot be compared to others. You are the best at comforting and encouraging others. \n
         🥂 Living today for the future? No, I'm going to enjoy today!\n
@@ -612,203 +612,202 @@ export const resultEngPreset : ResultType[] = [
         drinkEnName: "King's Drink",
         spaceName: "a space full of friendly stories",
         spaceAddress: `60 Sogang-ro 9-gil, Mapo-gu, Seoul`,
-        content: `"🥂 Humanization of 'Jung'!" He is affectionate and always wants to know people. Empathy is also very easy for you. \n
-🥂 He is very quick-witted and is very responsive. \n
-🥂 I'm U-Know Yunho! You have a lot of enthusiasm. \n
-🥂 Is my lover sensitive?! I'll get everything right away! They adapt well to the other person, but when they are hurt, they last very long. \n\n
-In a space full of passion and affectionate stories like you, who have charisma and full passion, how about a prince who drank from the Joseon royal family as a royal secret?`,
-recommendDrink: 'The King',
-recommendSpace: 'Mountain Ring 1992',
-relevantLink: 'https://stibee.com/api/v1.0/emails/share/FqyIq7Hf57IPElUnAHOvxfAMiaDbMQ==',
-drinkImg: '4_drink.jpg',
-spaceImg: '산울림.jpg',
-},
-{
-id: 5,
-drinkName: 'Sweet Cocktail',
-drinkEnName: "Banana",
-spaceName: 'Paris-like space',
-spaceAddress: `384/F, Changgyeonggung-ro 1-gil, Jung-gu, Seoul`,
-content: `🥂 Happiness right now is more important than what you have to do tomorrow's happiness! I'll take care of my homework tomorrow, and let's play first! \n
-🥂 Your prime cells are emotional cells.
-🥂 I really want to know people, I want to give them all away, and it's so easy to empathize.\n
-🥂 If people like you are gathered, the earth may explode with affection. \n\n
-How about a sweet cocktail in a space with a wide glass window where you can freely look at the world as if you were in Paris?`,
-    recommendDrink: 'Banana',
-    recommendSpace: 'Circles',
-    relevantLink: 'https://stibee.com/api/v1.0/emails/share/-uBDebXfqJISCwfUnjwrjpSQ5UGF_g==',
-    drinkImg: '5_drink.jpeg',
-    spaceImg: '원형들.jpg',
-},
-{
-    id: 6,
-        drinkName: 'Heavy Cocktail',
-    drinkEnName: "Mr. Carmen Negroni",
-    spaceName: `Kingsman's space`,
-    spaceAddress: `서울15 Wausan-ro, Mapo-gu, Seoul`,
-    content: `🥂Standard of leadership. You are ambitious\n
-🥂 You play games because you're bored? You have to win the game no matter what! He is a merciless style that can be satisfied only when he wins. \n
-🥂It's very soft for people I like, but I think their private lives are important.\n
-🥂I'm stubborn, but I accept justifiable and reasonable criticism. \n\n
-    How about a heavy and strong cocktail in a place where a charismatic leader like you used to be?`,
-recommendDrink: "Mr. Carmen Negroni",
-recommendSpace: 'Desteal',
-relevantLink: 'https://stibee.com/api/v1.0/emails/share/_k8MREmOC2NgdqVAm67SDgIud2DZaQ==',
-drinkImg: '6_drink.jpeg',
-spaceImg: '디스틸.jpg',
-},
-{
-id: 7,
-drinkName: `Natural Wine`,
-drinkEnName: 'Natural \nWhite Wine',
-spaceName: 'A space of indifference and kindness',
-spaceAddress: `서울 3rd floor, 1625-16 Bongcheon-dong, Gwanak-gu, Seoul`,
-content: `🥂 Be careful when you make a choice! Maybe I'm making a bad choice at the crossroads of my life.\n
-🥂 Sometimes I'm too honest. \n
-🥂In my head, I'm an idea bank! I'm always full of ideas. \n
-🥂 I'm attracted to unique people. \n\n
-How about natural white wine in a casual but friendly space like yours?
-`,
-    recommendDrink: 'Natural White Wine',
-    recommendSpace: 'Completion',
-    relevantLink: 'https://stibee.com/api/v1.0/emails/share/gDkfBFjS2kPI9xzOA_QssqGu66mjqg==',
-    drinkImg: '7_drink.jpg',
-    spaceImg: '낙성.jpg',
-},
-{
-    id: 8,
-        drinkName: "Beer without Likes",
-    drinkEnName: "Triporteur Belgian Oak",
-    spaceName: 'A reasonably noisy space',
-    spaceAddress: `16 Dongsung 3-gil, Jongno-gu, Seoul`,
-    content: `🥂 Humanize benevolence and you can say that caring is just a personality." \n
-🥂 Sometimes I think too much.\n
-🥂 It takes a very long time to open up, and love is a style that warms up very slowly.
-🥂 It's very difficult to express your feelings. This may also be a consideration for the other person.\n\n
-    How about a sweet beer that you can drink in a moderately quiet, moderately noisy space that is neither too quiet nor too noisy?`,
-recommendDrink: 'Tripper Beljian Oak',
-recommendSpace: `Monastery`,
-relevantLink: 'https://stibee.com/api/v1.0/emails/share/XbTN1J_aI4UwxBvFuXt7yMTJ7AKYIQ',
-drinkImg: '8_drink.jpg',
-spaceImg: '수도원.jpg',
-},
-{
-id: 9,
-drinkName: "Wine with Bach's Music",
-drinkEnName: 'Geyser \npeak cabernet sauvignon',
-spaceName: 'Sensory space',
-spaceAddress:` 21 Dosan-daero, Gangnam-gu, 21 Dosan-daero, Gangnam-gu, Republic of Korea`,
-content: `🥂 If you fight someone like this, it's 99% of the other person's problem, and you have peace. \n
-🥂 I hate crowded places, so it's better to be alone. \n
-🥂 Dreamer type who loves intense art. \n
-🥂 You may look quiet and cranky, but in fact, you're not.
-Why don't you get inspired by a glass of wine while listening to a variety of ideas and your colorful yet sensuous music, Bach?`,
-    recommendDrink: "Guyser's Pick Cabernet Sauvignon",
-    recommendSpace: 'Monktubach',
-        relevantLink: 'https://stibee.com/api/v1.0/emails/share/XDA70sXfmcaj_WSomitVRjsrmHP_Cw==',
-    drinkImg: '9_drink.jpg',
-    spaceImg: '몽크투바흐.jpg',
-},
-{
-    id: 10,
-        drinkName: "Light Makgeolli",
-    drinkEnName: 'Song Myungseop\n Rice Wine',
-    spaceName: 'Calm space',
-    spaceAddress: `1st floor, 228, Eonju-ro 168-gil, Gangnam-gu, Seoul`,
-    content: `🥂 Don't be ridiculous. I hate nonsense more than anything else, and I want others to recognize and put them into practice quickly. \n
-🥂 I don't like change and I like being systematic!\n
-🥂 It's useless, but I know a lot of things. \n
-🥂Dating is difficultㅠIt can be difficult to interact with your lover because you like realistic things and are not good at expressing emotions. \n\n
-    How about a cup of light makgeolli in a calm and quiet place?`,
-    recommendDrink: "Song Myungseop Makgeolli",
-    recommendSpace: 'Silence',
-    relevantLink: 'https://stibee.com/api/v1.0/emails/share/DPjGjK6CiBYGEzkvKOt8Lf5-0kq2Aw==',
-    drinkImg: '10_drink.jpg',
-    spaceImg: '묵전.jpg',
-},
+        content: `"🥂 Humanization of 'Jung'!" You are affectionate and always wants to know people. Empathy is also very easy for you. \n
+                🥂 You are very quick-witted and are very responsive. \n
+                🥂 You are U-Know Yunho! You have a lot of enthusiasm. \n
+                🥂 Is your lover sensitive?! You'll get everything right away! You adapt well to the other person, but when you are hurt, they last very long. \n\n
+                In a space full of passion and affectionate stories like you, who have charisma and full passion, how about a prince who drank from the Joseon royal family as a royal secret?`,
+        recommendDrink: 'The King',
+        recommendSpace: 'Mountain Ring 1992',
+        relevantLink: 'https://stibee.com/api/v1.0/emails/share/FqyIq7Hf57IPElUnAHOvxfAMiaDbMQ==',
+        drinkImg: '4_drink.jpg',
+        spaceImg: '산울림.jpg',
+    },
     {
-        id: 11,
-        drinkName: 'New Highball',
+        id: 5,
+        drinkName: 'Sweet Cocktail',
+        drinkEnName: "Banana",
+        spaceName: 'Paris-like space',
+        spaceAddress: `384/F, Changgyeonggung-ro 1-gil, Jung-gu, Seoul`,
+        content: `🥂 Happiness right now is more important than what you have to do tomorrow's happiness! You'll take care of your homework tomorrow, and let's play first! \n
+                🥂 Your prime cells are emotional cells.
+                🥂 You really want to know people, You want to give them all away, and it's so easy to empathize.\n
+                🥂 If people like you are gathered, the earth may explode with affection. \n\n
+
+                How about a sweet cocktail in a space with a wide glass window where you can freely look at the world as if you were in Paris?`,
+        recommendDrink: 'Banana',
+        recommendSpace: 'Circles',
+        relevantLink: 'https://stibee.com/api/v1.0/emails/share/-uBDebXfqJISCwfUnjwrjpSQ5UGF_g==',
+        drinkImg: '5_drink.jpeg',
+        spaceImg: '원형들.jpg',
+    },
+    {
+        id: 6,
+        drinkName: 'Heavy Cocktail',
+        drinkEnName: "Mr. Carmen Negroni",
+        spaceName: `Kingsman's space`,
+        spaceAddress: `15 Wausan-ro, Mapo-gu, Seoul`,
+        content: `🥂Standard of leadership. You are ambitious\n  
+                🥂 You play games because you're bored? You have to win the game no matter what! He is a merciless style that can be satisfied only when he wins. \n
+                🥂It's very soft for people you like, but You think their private lives are important.\n
+                🥂You are stubborn, but you accept justifiable and reasonable criticism. \n\n
+                How about a heavy and strong cocktail in a place where a charismatic leader like you used to be?`,
+        recommendDrink: "Mr. Carmen Negroni",
+        recommendSpace: 'Desteal',
+        relevantLink: 'https://stibee.com/api/v1.0/emails/share/_k8MREmOC2NgdqVAm67SDgIud2DZaQ==',
+        drinkImg: '6_drink.jpeg',
+        spaceImg: '디스틸.jpg',
+    },
+    {
+        id: 7,
+        drinkName: `Natural Wine`,
+        drinkEnName: 'Natural \nWhite Wine',
+        spaceName: 'A space of indifference and kindness',
+        spaceAddress: `3rd floor, 1625-16 Bongcheon-dong, Gwanak-gu, Seoul`,
+        content: `🥂 Be careful when you make a choice! Maybe You are making a bad choice at the crossroads of your life.\n
+                🥂 Sometimes You are too honest. \n
+                🥂 You are an idea bank! You are always full of ideas. \n
+                🥂 You are attracted to unique people. \n\n
+                How about natural white wine in a casual but friendly space like yours?`,
+        recommendDrink: 'Natural White Wine',
+        recommendSpace: 'Completion',
+        relevantLink: 'https://stibee.com/api/v1.0/emails/share/gDkfBFjS2kPI9xzOA_QssqGu66mjqg==',
+        drinkImg: '7_drink.jpg',
+        spaceImg: '낙성.jpg',
+    },
+    {
+        id: 8,
+        drinkName: "Beer that everyone will like",
+        drinkEnName: "Triporteur Belgian Oak",
+        spaceName: 'A reasonably noisy space',
+        spaceAddress: `16 Dongsung 3-gil, Jongno-gu, Seoul`,
+        content: `🥂 Humanize benevolence and you can say that caring is just a personality." \n
+                🥂 Sometimes you think too much.\n
+                🥂 It takes a very long time to open up, and love is a style that warms up very slowly.
+                🥂 It's very difficult to express your feelings. This may also be a consideration for the other person.\n\n
+                How about a sweet beer that you can drink in a moderately quiet, moderately noisy space that is neither too quiet nor too noisy?`,
+        recommendDrink: 'Tripper Beljian Oak',
+        recommendSpace: `Monastery`,
+        relevantLink: 'https://stibee.com/api/v1.0/emails/share/XbTN1J_aI4UwxBvFuXt7yMTJ7AKYIQ',
+        drinkImg: '8_drink.jpg',
+        spaceImg: '수도원.jpg',
+    },
+    {
+        id: 9,
+        drinkName: "Wine with Bach's Music",
+        drinkEnName: 'Geyser \npeak cabernet sauvignon',
+        spaceName: 'Sensory space',
+        spaceAddress:` 21 Dosan-daero, Gangnam-gu, 21 Dosan-daero, Gangnam-gu, Republic of Korea`,
+        content: `🥂 If you fight someone like this, it's 99% of the other person's problem, and you have peace. \n
+                🥂 You hate crowded places, so it's better to be alone. \n
+                🥂 Dreamer type who loves intense art. \n
+                🥂 You may look quiet and cranky, but in fact, you're not.
+                Why don't you get inspired by a glass of wine while listening to a variety of ideas and your colorful yet sensuous music, Bach?`,
+        recommendDrink: "Guyser's Pick Cabernet Sauvignon",
+        recommendSpace: 'Monktubach',
+        relevantLink: 'https://stibee.com/api/v1.0/emails/share/XDA70sXfmcaj_WSomitVRjsrmHP_Cw==',
+        drinkImg: '9_drink.jpg',
+        spaceImg: '몽크투바흐.jpg',
+    },
+    {
+        id: 10,
+        drinkName: "Light Makgeolli",
+        drinkEnName: 'Song Myungseop\n Rice Wine',
+        spaceName: 'Calm space',
+        spaceAddress: `1st floor, 228, Eonju-ro 168-gil, Gangnam-gu, Seoul`,
+        content: `🥂 Don't be ridiculous. You hate nonsense more than anything else, and Your want others to recognize and put them into practice quickly. \n
+                🥂 You don't like change and You like being systematic!\n
+                🥂 It's useless, but You know a lot of things. \n
+                🥂Dating is difficultIt can be difficult to interact with your lover because you like realistic things and are not good at expressing emotions. \n\n
+                How about a cup of light makgeolli in a calm and quiet place?`,
+        recommendDrink: "Song Myungseop Makgeolli",
+        recommendSpace: 'Silence',
+        relevantLink: 'https://stibee.com/api/v1.0/emails/share/DPjGjK6CiBYGEzkvKOt8Lf5-0kq2Aw==',
+        drinkImg: '10_drink.jpg',
+        spaceImg: '묵전.jpg',
+    },
+    {
+        id: 11, drinkName: 'New Highball',
         drinkEnName: "Joseon Highball",
         spaceName: 'Solo Navigation Space',
         spaceAddress:` 60 Sogang-ro 9-gil, Mapo-gu, Seoul`,
         content: `🥂 I like the creative and stereotyped daily life.\n
-🥂 Movies are action and comedy!\n
-🥂 Watching gifs is so much fun! I like to watch memes. \n
-🥂 I hate to think too much. \n\n
-How about a new highball in your own space that's perfect for exploring the surroundings?`,
-recommendDrink: 'Chosun Highball',
-    recommendSpace: 'Mountain Ring 1992',
-    relevantLink: 'https://stibee.com/api/v1.0/emails/share/FqyIq7Hf57IPElUnAHOvxfAMiaDbMQ==',
-    drinkImg: '11_drink.jpg',
-    spaceImg: '산울림.jpg',
-},
-{
-    id: 12,
+                🥂 Favorite Movies are action and comedy!\n
+                🥂 Watching gifs is so much fun! You like to watch memes. \n
+                🥂 You hate to think too much. \n\n
+                How about a new highball in your own space that's perfect for exploring the surroundings?`,
+        recommendDrink: 'Chosun Highball',
+        recommendSpace: 'Mountain Ring 1992',
+        relevantLink: 'https://stibee.com/api/v1.0/emails/share/FqyIq7Hf57IPElUnAHOvxfAMiaDbMQ==',
+        drinkImg: '11_drink.jpg',
+        spaceImg: '산울림.jpg',
+    },
+    {
+        id: 12,
         drinkName: "Winter Soju with Strong Faith",
-    drinkEnName: "Winter Soju",
-    spaceName: 'Space for contemplation',
-    spaceAddress: `Seuol 1F, Seongmun Building, 435 Dorim-ro, Yeongdeungpo-gu, Seoul`,
-    content: `🥂 It's hard to find someone like you 같은 You have the least common personality.\n
-🥂Forest rather than trees! \n
-🥂 Movies are fantasy!\n
-🥂She has excellent empathy. Your prime cells are emotional cells!\n\n
-    Why don't you have a counter seat where you can talk with the chef and a space where you can empty your thoughts and spend time alone, and make a long, elaborate winter soju like your strong belief?`,
-    recommendDrink: "Winter Soju",
+        drinkEnName: "Winter Soju",
+        spaceName: 'Space for contemplation',
+        spaceAddress: `Seuol 1F, Seongmun Building, 435 Dorim-ro, Yeongdeungpo-gu, Seoul`,
+        content: `🥂 It's hard to find someone like you. You have the least common personality.\n
+                🥂 Forest rather than trees! \n
+                🥂 Favorite movies are fantasy!\n
+                🥂 You are excellent empathy. You are very emotional\n\n
+                Why don't you have a counter seat where you can talk with the chef and a space where you can empty your thoughts and spend time alone, and make a long, elaborate winter soju like your strong belief?`,
+        recommendDrink: "Winter Soju",
         recommendSpace: 'Private Space',
-    relevantLink: 'https://stibee.com/api/v1.0/emails/share/gDkfBFjS2kPI9xzOA_QssqGu66mjqg==',
-    drinkImg: '12_drink.jpg',
-    spaceImg: '사적공간.jpg',
-},
-{
-    id: 13,
+        relevantLink: 'https://stibee.com/api/v1.0/emails/share/gDkfBFjS2kPI9xzOA_QssqGu66mjqg==',
+        drinkImg: '12_drink.jpg',
+        spaceImg: '사적공간.jpg',
+    },
+    {
+        id: 13,
         drinkName: `Fruit-flavored Whiskey`,
-    drinkEnName: "Glanfidic",
-    spaceName: 'Classic Music Space',
-    spaceAddress: `21 Dosan-daero, Gangnam-gu, 21 Dosan-daero, Gangnam-gu, Republic of Korea,`,
-    content: `🥂 I'm shy on the outside, but there's actually a flame of passion hidden inside. \n
-🥂 He thinks he's an outsider. Actually, I prefer being alone to living in a group!\n
-🥂 Movies are fantasy!\n
-🥂 It's warm-hearted, so I get along well with my children.\n\n
-    If you have emotional and deep insight, if you love alcohol and music, how about a whiskey that you can enjoy with a little fruity scent in a space where you can enjoy classical appreciation?`,
-recommendDrink: 'Glennfidic',
-recommendSpace: 'Monktubach',
-relevantLink: 'https://stibee.com/api/v1.0/emails/share/XDA70sXfmcaj_WSomitVRjsrmHP_Cw==',
-drinkImg: '13_drink.jpg',
-spaceImg: '몽크투바흐.jpg',
-},
-{
-id: 14,
-drinkName: 'Cockets of various layers',
-drinkEnName: "Rosa Paradiso",
-spaceName: 'Classic space',
-spaceAddress:` 서울15 Wausan-ro, Mapo-gu, Seoul`,
-content: `🥂 I still hate the rules and regulations!\n
-🥂 Life is my way! \n
-🥂 If you have something to do, start working just before the deadline.\n
-🥂 It is good to understand the humanization of perfectionism and everything. \n\n
-It's a classic space, but how about a cocktail with various layers that are not stereotyped? `,
-    recommendDrink: 'Rosa Paradiso',
-    recommendSpace: 'Desteal',
-    relevantLink: 'http://naver.com',
-    drinkImg: '14_drink.jpg',
-    spaceImg: '디스틸.jpg',
-},
-{
-    id: 15,
+        drinkEnName: "Glanfidic",
+        spaceName: 'Classic Music Space',
+        spaceAddress: `21 Dosan-daero, Gangnam-gu, 21 Dosan-daero, Gangnam-gu, Republic of Korea,`,
+        content: `🥂 You are shy on the outside, but there's actually a flame of passion hidden inside. \n
+                🥂 You thinks You are an outsider. Actually, You prefer being alone to living in a group!\n
+                🥂 Favorite movies are fantasy!\n
+                🥂 You are warm-hearted, so you get along well with children.\n\n
+                If you have emotional and deep insight, if you love alcohol and music, how about a whiskey that you can enjoy with a little fruity scent in a space where you can enjoy classical appreciation?`,
+        recommendDrink: 'Glennfidic',
+        recommendSpace: 'Monktubach',
+        relevantLink: 'https://stibee.com/api/v1.0/emails/share/XDA70sXfmcaj_WSomitVRjsrmHP_Cw==',
+        drinkImg: '13_drink.jpg',
+        spaceImg: '몽크투바흐.jpg',
+    },
+    {
+        id: 14,
+        drinkName: 'Cockets of various layers',
+        drinkEnName: "Rosa Paradiso",
+        spaceName: 'Classic space',
+        spaceAddress:` 15 Wausan-ro, Mapo-gu, Seoul`,
+        content: `🥂 You still hate the rules and regulations!\n
+                🥂 Your life is my way! \n
+                🥂 If you have something to do, start working just before the deadline.\n
+                🥂 It is good to understand the humanization of perfectionism and everything. \n\n
+                It's a classic space, but how about a cocktail with various layers that are not stereotyped? `,
+        recommendDrink: 'Rosa Paradiso',
+        recommendSpace: 'Desteal',
+        relevantLink: 'http://naver.com',
+        drinkImg: '14_drink.jpg',
+        spaceImg: '디스틸.jpg',
+    },
+    {
+        id: 15,
         drinkName: 'Sake',
-    drinkEnName: "春霞 純米酒 赤ラベル",
-    spaceName: 'Simple Space',
-    spaceAddress: `서울1F, Seongmun Building, 435 Dorim-ro, Yeongdeungpo-gu, Seoul`,
-    content: `🥂'I refuse to be normal! You have your own originality and creativity. And that's pretty good!\n
-🥂 I don't want to talk to you first, but I talk a lot about my favorite field.\n
-🥂 About 5.55 trillion ideas in my head
-🥂 So honest\n\n
-    How about Sake where you can savor and drink little by little in a cozy and simple space where you can enjoy your thoughts alone?`,
-recommendDrink: 'Sake',
-recommendSpace: 'Private Space',
-relevantLink: 'https://stibee.com/api/v1.0/emails/share/gDkfBFjS2kPI9xzOA_QssqGu66mjqg==',
-drinkImg: '15_drink.jpg',
-spaceImg: '사적공간.jpg',
-},
+        drinkEnName: "春霞 純米酒 赤ラベル",
+        spaceName: 'Simple Space',
+        spaceAddress: `1F, Seongmun Building, 435 Dorim-ro, Yeongdeungpo-gu, Seoul`,
+        content: `🥂'You refuse to be normal! You have your own originality and creativity. And that's pretty good!\n
+                🥂 You don't want to talk to you first, but You talk a lot about my favorite field.\n
+                🥂 About 5.55 trillion ideas in your head
+                🥂 So honest\n\n
+                How about Sake where you can savor and drink little by little in a cozy and simple space where you can enjoy your thoughts alone?`,
+        recommendDrink: 'Sake',
+        recommendSpace: 'Private Space',
+        relevantLink: 'https://stibee.com/api/v1.0/emails/share/gDkfBFjS2kPI9xzOA_QssqGu66mjqg==',
+        drinkImg: '15_drink.jpg',
+        spaceImg: '사적공간.jpg',
+    },
 ]
