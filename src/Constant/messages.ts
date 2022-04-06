@@ -13,6 +13,7 @@ export default {
     interestInMore: '더 다양한 술과 공간이 궁금하신가요?',
     goToSubscribe: '드링킷 뉴스레터 구독하러 가기',
     recommend: '당신에게 추천드려요',
+    goToGoogleForm: '설문조사 하러가기',
     mainTitleEng: 'Let\'s find out what kind of liquor and space looks like me',
     whatIsMyDrinkItEng: 'What Is My 🥂 DrinkIt?',
     startTestEng: 'START DITI TEST',
@@ -26,5 +27,6 @@ export default {
     linkToNewsLetterSentenceEng: ({result}: {result: string}) => `<${result}> Going to see the Drinkit Newsletter`,
     interestInMoreEng: 'Do you want to know more variety of drinks and spaces?',
     goToSubscribeEng: 'Subscribe to the Drinkit Newsletter',
-    recommendEng: 'I recommend it to you'
+    recommendEng: 'I recommend it to you',
+    goToGoogleFormEng: 'Go to Survey',
 }

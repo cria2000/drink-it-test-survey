@@ -112,3 +112,9 @@
     color: white;
     padding: 20px 0 100px 0;
 }
+
+.result_page .column{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
