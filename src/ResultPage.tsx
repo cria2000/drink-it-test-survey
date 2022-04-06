@@ -26,28 +26,32 @@ export const ResultPage = ({selectedOptions}: Props) => {
 
     useEffect(() => {
         if(!window?.Kakao?.isInitialized) window?.Kakao?.init?.(process.env["REACT_APP_KAKAO"])
-        window?.Kakao?.Link?.createDefaultButton({
-            container: '#kakao-link-btn',
-            objectType: 'feed',
-            content: {
-                title: '나의 DrinkIt은 무엇일까?',
-                description: '당신과 잘 어울리는 공간과 술을 알아보세요!',
-                imageUrl: './Images/drinkIt.png',
-                link:{
+    }, [])
+
+    const shareKakao = () => {
+        console.log(window?.Kakao)
+        window?.Kakao?.Link?.sendDefault({
+        objectType: 'feed',
+        content: {
+            title: '나의 DrinkIt은 무엇일까?',
+            description: '당신과 잘 어울리는 공간과 술을 알아보세요!',
+            imageUrl: './Images/drinkIt.png',
+            link:{
+                webUrl: 'http://localhost:3000',
+            }
+        },
+        buttons: [
+            {
+                title: '알아보러가자!',
+                link: {
                     webUrl: 'http://localhost:3000',
                 }
-            },
-            buttons: [
-                {
-                    title: '알아보러가자!',
-                    link: {
-                        webUrl: 'http://localhost:3000',
-                    }
-                }
-            ]
-        })
+            }
+        ]
+    })
 
-    }, [])
+
+    }
 
 
     return (
@@ -76,9 +80,10 @@ export const ResultPage = ({selectedOptions}: Props) => {
                 </div>
             </div>
                 <div className="column">
-                <a className="result_page_links" href={`https://forms.gle/9FKxCpUscxUdWJi56`}>{isKorean ? messages?.goToGoogleForm : messages.goToGoogleFormEng}</a>
-            <button className='result_page_share_button' id='kakao-link-btn'>{isKorean ? '카카오톡으로 공유하기' : 'share with kakaoTalk'}</button>
-                </div></div>
+                    <a className="result_page_links" href={`https://forms.gle/9FKxCpUscxUdWJi56`}>{isKorean ? messages?.goToGoogleForm : messages.goToGoogleFormEng}</a>
+                    <button className='result_page_share_button' id='kakao-link-btn' onClick={shareKakao}>{isKorean ? '카카오톡으로 공유하기' : 'share with kakaoTalk'}</button>
+                </div>
+            </div>
         </div>
     );
 };
