@@ -20,8 +20,6 @@ export const MainFrame = (props: Props) => {
         setSelectedOptions(newSelectedOptions)
     }
 
-    // return (<MainPage />)
-
     return <Routes>
                 <Route path="/" element={<MainPage />} />
                 <Route path="/question" element={<QuestionContainer selectedOptions={selectedOptions} handleSelectedOptions={handleSelectedOptions}/>} />
