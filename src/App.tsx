@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import './Styles/css/App.css';
 import {MainFrame} from "./MainFrame";
+import {MainPage} from "./MainPage";
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-       <MainFrame/>
+       <MainFrame />
     </div>
   );
 }
