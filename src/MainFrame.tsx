@@ -3,12 +3,15 @@ import {MainPage} from "./MainPage";
 import { Route, Routes} from "react-router-dom";
 import {ResultPage} from "./ResultPage";
 import {QuestionContainer, SelectedOptionsType} from "./QuestionContainer";
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import ReactGA from "react-ga";
 
 type Props = {
 
 };
 export const MainFrame = (props: Props) => {
+    const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID ?? ''
+
     const [selectedOptions, setSelectedOptions] = useState<SelectedOptionsType>({
         first: {e: 0, i: 0},
         second: {n: 0, s: 0},
@@ -19,6 +22,12 @@ export const MainFrame = (props: Props) => {
     const handleSelectedOptions = (newSelectedOptions: SelectedOptionsType) => {
         setSelectedOptions(newSelectedOptions)
     }
+
+    useEffect(() => {
+        ReactGA.initialize(TRACKING_ID);
+        ReactGA.set({page: window.location.pathname});
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }, []);
 
     return <Routes>
                 <Route path="/" element={<MainPage />} />

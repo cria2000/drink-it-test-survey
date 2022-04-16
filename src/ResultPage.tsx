@@ -25,9 +25,7 @@ export const ResultPage = ({selectedOptions}: Props) => {
     && value?.third === selectedThird && value?.fourth === selectedFourth)
     const result = resultPresetValue[resultIndex ?? 0]
 
-    const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID ?? ''
-
-    useEffect(() => {
+       useEffect(() => {
         const script = document.createElement('script')
         script.src = 'https://developers.kakao.com/sdk/js/kakao.js'
         script.async = true
@@ -45,11 +43,6 @@ export const ResultPage = ({selectedOptions}: Props) => {
     }, [kakaoInit])
 
 
-    useEffect(() => {
-        ReactGA.initialize(TRACKING_ID);
-        ReactGA.set({page: window.location.pathname});
-        ReactGA.pageview(window.location.pathname + window.location.search);
-    }, []);
 
     const shareKakao = () => {
         window?.Kakao?.Link?.sendDefault({
