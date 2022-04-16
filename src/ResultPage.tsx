@@ -11,8 +11,7 @@ type Props = {
     selectedOptions: SelectedOptionsType
 };
 export const ResultPage = ({selectedOptions}: Props) => {
-    const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID ?? ''
-    const [kakaoInit, setKakaoInit] = useState<boolean>(false)
+   const [kakaoInit, setKakaoInit] = useState<boolean>(false)
 
     const isKorean = useReactiveVar(languageVar) === ELangauge.KOREAN
 
@@ -68,12 +67,7 @@ export const ResultPage = ({selectedOptions}: Props) => {
         })
     }
 
-    useEffect(() => {
-        ReactGA.initialize(TRACKING_ID);
-        ReactGA.set({page: window.location.pathname});
-        ReactGA.pageview(window.location.pathname + window.location.search);
-        console.log(ReactGA)
-    }, []);
+
 
     const handleClickSubscription = () => {
         ReactGA.event({

@@ -10,7 +10,9 @@ type Props = {
 
 };
 export const MainFrame = (props: Props) => {
-      const [selectedOptions, setSelectedOptions] = useState<SelectedOptionsType>({
+    const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID ?? ''
+
+    const [selectedOptions, setSelectedOptions] = useState<SelectedOptionsType>({
         first: {e: 0, i: 0},
         second: {n: 0, s: 0},
         third: {f: 0,t: 0},
@@ -21,7 +23,22 @@ export const MainFrame = (props: Props) => {
         setSelectedOptions(newSelectedOptions)
     }
 
+    useEffect(() => {
+        const script = document.createElement('script')
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${TRACKING_ID}`
+        script.async = true
+        script.innerHTML=`window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+            
+        gtag('config', ${TRACKING_ID});`
 
+        document.body.appendChild(script)
+
+        return () => {
+            document.body.removeChild(script)
+        }
+    }, []);
     return <Routes>
                 <Route path="/" element={<MainPage />} />
                 <Route path="/question" element={<QuestionContainer selectedOptions={selectedOptions} handleSelectedOptions={handleSelectedOptions}/>} />
