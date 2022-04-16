@@ -1,14 +1,16 @@
 .question_page{
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
+    align-items: center;
+    height: 95%;
+    width: 90%;
 }
 
 .question_page .question_page_question_message{
     color: white;
-    min-height: 200px;
-    font-size: 20pt;
+    min-height: 100px;
+    width: 90%;
+    font-size: 12pt;
     font-family: "NanumSquare - Bold";
     display: flex;
     justify-content: center;
@@ -16,13 +18,13 @@
 }
 
 .question_page .question_page_choice_button{
-    height: 120px;
-    width: 400px;
+    height: 100px;
+    width: 300px;
     border: solid 3px var(--main-red);
     border-radius: 10px;
     color: white;
-    margin-bottom: 40px;
-    font-size: 15pt;
+    margin-bottom: 30px;
+    font-size: 11pt;
     font-family: "NanumSquare - Bold";
 }
 

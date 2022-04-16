@@ -49,8 +49,8 @@ export const QuestionContainer = ({selectedOptions, handleSelectedOptions}: Prop
                 <div className="total_question">{totalQuestionNumber}</div>
             </div>
             <div className="question_container_progress_bar">
-                <div className="current_progress_container" style={{width: currentQuestion * 35 + 25}}>
-                    <div style={{width: currentQuestion * 35}} className="current_progress"/>
+                <div className="current_progress_container" style={{width: currentQuestion * 29 + 25}}>
+                    <div style={{width: currentQuestion * 29}} className="current_progress"/>
                     <div className="current_progress_icon">🥂</div>
                 </div>
             </div>

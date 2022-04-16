@@ -1,4 +1,5 @@
 .result_page{
+    font-size: 10pt;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -7,8 +8,11 @@
 }
 
 .result_page .result_page_content{
-    width: 400px;
+    width: 330px;
     overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .result_page .result_page_content {
@@ -23,7 +27,7 @@
 .result_page .result_page_notifier{
     position: relative;
     font-family: "Eulyoo - SemiBold";
-    font-size: 25pt;
+    font-size: 18pt;
     white-space: pre-wrap;
     padding: 50px 0 30px 0;
 }
@@ -37,13 +41,13 @@
     top: 70px;
     color: var(--main-red);
     font-family: "Eulyoo - SemiBold";
-    font-size: 30pt;
+    font-size: 20pt;
     opacity: 0.4;
 }
 
 .result_page .result_page_drink_image{
-    width: 350px;
-    height: 300px;
+    width: 250px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -54,22 +58,21 @@
 
 .result_page .result_page_main_content{
     font-family: "NanumBarunGothic - Light";
-    font-size: 15pt;
+    font-size: 11pt;
     padding: 30px 10px 50px 10px;
     white-space: pre-line;
 }
 
 
 .result_page .result_page_recommend{
-    min-height: 300px;
-    font-size: 13pt;
+    width: 230px;
+    font-size: 9pt;
     border: solid 2px var(--main-red);
     border-radius: 15px;
     margin: 20px;
 }
 
 .result_page .recommend_message{
-    font-size: 15pt;
     padding: 10px;
     font-family: "NanumSquare - Bold";
 }
@@ -77,25 +80,22 @@
 .result_page .recommend_space_drink{
     display: flex;
     justify-content: flex-start;
-    padding: 10px;
+    padding: 5px;
 }
 
 .result_page .recommend_space_address{
     display: flex;
     justify-content: flex-start;
     color: var(--font-gray);
-    padding: 0 0 0 10px;
+    padding: 0 0 0 5px;
 }
 
-
-
 .result_page .result_page_space_image{
-    width: 300px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     padding: 5px;
     object-fit: cover;
 }
-
 
 .result_page .result_page_news_letter,
 .result_page .result_page_subscribe_link{
@@ -108,9 +108,20 @@
     color: var(--main-red);
 }
 
+
 .result_page .result_page_share_button{
-    color: white;
+    color: #A4A2A2;
+    font-size: 9pt;
     padding: 20px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result_page .result_page_share_button > .kakao_icon{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
 }
 
 .result_page .column{
