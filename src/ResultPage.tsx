@@ -60,14 +60,14 @@ export const ResultPage = ({selectedOptions}: Props) => {
                 description: '🥂당신과 잘 어울리는 공간과 술을 알아보세요🥂',
                 imageUrl: './Images/drinkItHeader.png',
                 link:{
-                    webUrl: 'https://luxury-madeleine-944cc7.netlify.app',
+                    webUrl: 'https://heartfelt-licorice-10119b.netlify.app',
                 }
             },
             buttons: [
                 {
                     title: 'DrinkIt 테스트하러가기',
                     link: {
-                        webUrl: 'https://luxury-madeleine-944cc7.netlify.app',
+                        webUrl: 'https://heartfelt-licorice-10119b.netlify.app',
                     }
                 }
             ]
