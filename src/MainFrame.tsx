@@ -10,9 +10,7 @@ type Props = {
 
 };
 export const MainFrame = (props: Props) => {
-    const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID ?? ''
-
-    const [selectedOptions, setSelectedOptions] = useState<SelectedOptionsType>({
+      const [selectedOptions, setSelectedOptions] = useState<SelectedOptionsType>({
         first: {e: 0, i: 0},
         second: {n: 0, s: 0},
         third: {f: 0,t: 0},
@@ -23,11 +21,6 @@ export const MainFrame = (props: Props) => {
         setSelectedOptions(newSelectedOptions)
     }
 
-    useEffect(() => {
-        ReactGA.initialize(TRACKING_ID);
-        ReactGA.set({page: window.location.pathname});
-        ReactGA.pageview(window.location.pathname + window.location.search);
-    }, []);
 
     return <Routes>
                 <Route path="/" element={<MainPage />} />
