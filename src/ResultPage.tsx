@@ -2,15 +2,16 @@ import * as React from 'react';
 import {EResult, resultEngPreset, resultMap, resultPreset} from "./QuestionPreset";
 import messages from "./Constant/messages";
 import './Styles/css/ResultPage.css'
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import {SelectedOptionsType} from "./QuestionContainer";
 import { useReactiveVar } from '@apollo/client';
-import {ELangauge, languageVar } from './Cache/cache';
+import ReactGA from 'react-ga';import {ELangauge, languageVar } from './Cache/cache';
 
 type Props = {
     selectedOptions: SelectedOptionsType
 };
 export const ResultPage = ({selectedOptions}: Props) => {
+    const [kakaoInit, setKakaoInit] = useState<boolean>(false)
 
     const isKorean = useReactiveVar(languageVar) === ELangauge.KOREAN
 
@@ -24,35 +25,70 @@ export const ResultPage = ({selectedOptions}: Props) => {
     && value?.third === selectedThird && value?.fourth === selectedFourth)
     const result = resultPresetValue[resultIndex ?? 0]
 
+    const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID ?? ''
+
     useEffect(() => {
-        if(!window?.Kakao?.isInitialized) window?.Kakao?.init?.(process.env["REACT_APP_KAKAO"])
-    }, [])
+        const script = document.createElement('script')
+        script.src = 'https://developers.kakao.com/sdk/js/kakao.js'
+        script.async = true
+
+        document.body.appendChild(script)
+        if(!window?.Kakao?.isInitialized()) {
+            window?.Kakao?.init?.(process.env.REACT_APP_KAKAO)
+
+            setKakaoInit(!kakaoInit)
+        }
+
+        return () => {
+            document.body.removeChild(script)
+        }
+    }, [kakaoInit])
+
+
+    useEffect(() => {
+        ReactGA.initialize(TRACKING_ID);
+        ReactGA.set({page: window.location.pathname});
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }, []);
 
     const shareKakao = () => {
-        console.log(window?.Kakao)
         window?.Kakao?.Link?.sendDefault({
-        objectType: 'feed',
-        content: {
-            title: '나의 DrinkIt은 무엇일까?',
-            description: '당신과 잘 어울리는 공간과 술을 알아보세요!',
-            imageUrl: './Images/drinkIt.png',
-            link:{
-                webUrl: 'http://localhost:3000',
-            }
-        },
-        buttons: [
-            {
-                title: '알아보러가자!',
-                link: {
-                    webUrl: 'http://localhost:3000',
+            objectType: 'feed',
+
+            content: {
+                title: '나의 DrinkIt은 무엇일까?',
+                description: '🥂당신과 잘 어울리는 공간과 술을 알아보세요🥂',
+                imageUrl: './Images/drinkItHeader.png',
+                link:{
+                    webUrl: 'https://luxury-madeleine-944cc7.netlify.app',
                 }
-            }
-        ]
-    })
-
-
+            },
+            buttons: [
+                {
+                    title: 'DrinkIt 테스트하러가기',
+                    link: {
+                        webUrl: 'https://luxury-madeleine-944cc7.netlify.app',
+                    }
+                }
+            ]
+        })
     }
 
+    const handleClickSubscription = () => {
+        ReactGA.event({
+            category: "Event",
+            action: "Press subscription Link",
+            label: "Subscription",
+        });
+    }
+
+    const handleClickArcLink = () => {
+        ReactGA.event({
+            category: "Event",
+            action: "Press Arc Link",
+            label: "Watch Arc",
+        });
+    }
 
     return (
         <div className="result_page">
@@ -72,17 +108,17 @@ export const ResultPage = ({selectedOptions}: Props) => {
             <div className="result_page_drink_it_link_container">
                 <div className="result_page_news_letter">
                     <span>{isKorean ? messages.noticeNewsLetter({result: result?.recommendSpace}) : messages.noticeNewsLetterEng({result: result?.recommendSpace})}</span>
-                    <a className="result_page_links" href={result?.relevantLink}>{isKorean ? messages.linkToNewsLetterSentence({result: result?.recommendSpace}) : messages.linkToNewsLetterSentenceEng({result: result?.recommendSpace}) }</a>
+                    <a className="result_page_links" href={result?.relevantLink} onClick={handleClickArcLink}>{isKorean ? messages.linkToNewsLetterSentence({result: result?.recommendSpace}) : messages.linkToNewsLetterSentenceEng({result: result?.recommendSpace}) }</a>
                 </div>
                 <div className="result_page_subscribe_link">
                     <span>{isKorean ? messages.interestInMore : messages.interestInMoreEng}</span>
-                    <a className="result_page_links" href={`https://page.stibee.com/subscriptions/148567`}>{isKorean ? messages?.goToSubscribe : messages.goToSubscribeEng}</a>
+                    <a className="result_page_links" href={`https://page.stibee.com/subscriptions/148567`} onClick={handleClickSubscription}>{isKorean ? messages?.goToSubscribe : messages.goToSubscribeEng}</a>
                 </div>
             </div>
                 <div className="column">
                     <a className="result_page_links" href={`https://forms.gle/9FKxCpUscxUdWJi56`}>{isKorean ? messages?.goToGoogleForm : messages.goToGoogleFormEng}</a>
-                    <button className='result_page_share_button' id='kakao-link-btn' onClick={shareKakao}>{isKorean ? '카카오톡으로 공유하기' : 'share with kakaoTalk'}</button>
-                </div>
+                    <button className='result_page_share_button' id='kakao-link-btn' onClick={shareKakao}><img className="kakao_icon" src={require('./Images/kakao.png')}/>{isKorean ? '카카오톡으로 공유하기' : 'share with kakaoTalk'}</button>
+                    </div>
             </div>
         </div>
     );
