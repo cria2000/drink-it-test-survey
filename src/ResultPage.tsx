@@ -10,7 +10,7 @@ import ReactGA from 'react-ga';import {ELangauge, languageVar } from './Cache/ca
 type Props = {
     selectedOptions: SelectedOptionsType
 };
-export const ResultPage = ({selectedOptions}: Props) =>
+export const ResultPage = ({selectedOptions}: Props) => {
     const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID ?? ''
     const [kakaoInit, setKakaoInit] = useState<boolean>(false)
 
