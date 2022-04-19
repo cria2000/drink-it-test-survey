@@ -6,3 +6,4 @@ export enum ELangauge {
 }
 
 export const languageVar = makeVar<ELangauge>(ELangauge.KOREAN)
+export const predictVar = makeVar<number | undefined>(undefined)

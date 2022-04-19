@@ -5,15 +5,16 @@ import './Styles/css/ResultPage.css'
 import {useEffect, useState} from "react";
 import {SelectedOptionsType} from "./QuestionContainer";
 import { useReactiveVar } from '@apollo/client';
-import ReactGA from 'react-ga';import {ELangauge, languageVar } from './Cache/cache';
+import ReactGA from 'react-ga';import {ELangauge, languageVar, predictVar} from './Cache/cache';
 
 type Props = {
     selectedOptions: SelectedOptionsType
 };
 export const ResultPage = ({selectedOptions}: Props) => {
-   const [kakaoInit, setKakaoInit] = useState<boolean>(false)
+    const [kakaoInit, setKakaoInit] = useState<boolean>(false)
     const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID ?? ''
 
+    const predictedId = useReactiveVar(predictVar)
     const isKorean = useReactiveVar(languageVar) === ELangauge.KOREAN
 
     const selectedFirst = selectedOptions?.first?.i > selectedOptions?.first?.e ? EResult.I : EResult.E
@@ -74,6 +75,22 @@ export const ResultPage = ({selectedOptions}: Props) => {
         ReactGA.initialize(TRACKING_ID);
         ReactGA.set({page: window.location.pathname});
         ReactGA.pageview(window.location.pathname + window.location.search);
+
+        if(predictedId != undefined && predictedId === result?.id){
+            ReactGA.event({
+                category: "Event",
+                action: "correct Predict",
+                label: "correct Predict"
+            })
+        }
+        else if(predictedId != undefined && predictedId != result?.id){
+            ReactGA.event({
+                category: "Event",
+                action: "incorrect Predict",
+                label: "incorrect Predict"
+            })
+        }
+
     }, []);
 
     const handleClickSubscription = () => {
@@ -82,6 +99,20 @@ export const ResultPage = ({selectedOptions}: Props) => {
             action: "Press subscription Link",
             label: "Subscription",
         });
+        if(predictedId != undefined && predictedId === result?.id){
+            ReactGA.event({
+                category: "Event",
+                action: "click subscription and correct Predict",
+                label: "click subscription and correct Predict"
+            })
+        }
+        else if(predictedId != undefined && predictedId != result?.id){
+            ReactGA.event({
+                category: "Event",
+                action: "click subscription and incorrect Predict",
+                label: "click subscription and incorrect Predict"
+            })
+        }
     }
 
     const handleClickArcLink = () => {
@@ -90,6 +121,20 @@ export const ResultPage = ({selectedOptions}: Props) => {
             action: "Press Arc Link",
             label: "Watch Arc",
         });
+        if(predictedId != undefined && predictedId === result?.id){
+            ReactGA.event({
+                category: "Event",
+                action: "click arc link and correct Predict",
+                label: "click arc link and correct Predict"
+            })
+        }
+        else if(predictedId != undefined && predictedId != result?.id){
+            ReactGA.event({
+                category: "Event",
+                action: "click arc link and incorrect Predict",
+                label: "click arc link and   incorrect Predict"
+            })
+        }
     }
 
     return (
