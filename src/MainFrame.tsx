@@ -5,6 +5,7 @@ import {ResultPage} from "./ResultPage";
 import {QuestionContainer, SelectedOptionsType} from "./QuestionContainer";
 import {useEffect, useState} from "react";
 import ReactGA from "react-ga";
+import {SelectDrinkItPage} from "./SelectDrinkItPage";
 
 type Props = {
 
@@ -41,6 +42,7 @@ export const MainFrame = (props: Props) => {
     // }, []);
     return <Routes>
                 <Route path="/" element={<MainPage />} />
+                <Route path='/predict' element={<SelectDrinkItPage />} />
                 <Route path="/question" element={<QuestionContainer selectedOptions={selectedOptions} handleSelectedOptions={handleSelectedOptions}/>} />
                 <Route path="/result" element={<ResultPage selectedOptions={selectedOptions}/>} />
             </Routes>

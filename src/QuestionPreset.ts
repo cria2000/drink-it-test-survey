@@ -381,7 +381,7 @@ export const resultPreset : ResultType[] = [
         id: 7,
         drinkName: '내추럴 와인',
         drinkEnName: 'Natural \nWhite Wine',
-        spaceName: `무심한 듯 친절한 공간`,
+        spaceName: `무심한 듯\n 친절한 공간`,
         spaceAddress: 'ᑯ 서울 관악구 봉천동 1625-16 3층',
         content:  `🥂 선택을 할 때 조심하자! 어쩌면 인생의 갈림길에서 나쁜 선택을 하고 있는지로 모른다.\n
         🥂 가끔은 지나치게 솔직하다. \n

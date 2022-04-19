@@ -1,0 +1,43 @@
+.select_drink_it_page{
+    font-size: 10pt;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    -ms-overflow-style: none;
+     scrollbar-width: none;
+}
+
+.select_drink_it_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    white-space: pre-wrap;
+}
+
+.select_drink_it_content .predict_message{
+     font-size: 15pt;
+     margin-bottom: 40px;
+     font-family: "Eulyoo - SemiBold";
+}
+
+.select_drink_it_content .drink_it_list{
+    margin-top: 50px;
+}
+
+.select_drink_it_content .drink_it_data_group{
+    display: flex;
+    flex-direction: row;
+}
+
+.select_drink_it_content .drink_it_data{
+    width: 170px;
+    margin-bottom: 15px;
+}
+
+.select_drink_it_content .drink_it_image{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}

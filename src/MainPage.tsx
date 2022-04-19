@@ -23,7 +23,7 @@ export const MainPage = (props: Props) => {
     }
 
     const handleClickStartButton = () => {
-        navigation('question')
+        navigation('/predict')
     }
 
     return (

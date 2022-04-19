@@ -17,7 +17,7 @@
 
 .result_page .result_page_content {
     -ms-overflow-style: none;
-    scrollbar-width: none;
+     scrollbar-width: none;
 }
 
 .result_page .result_page_content::-webkit-scrollbar {

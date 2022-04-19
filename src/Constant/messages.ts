@@ -14,6 +14,7 @@ export default {
     goToSubscribe: '드링킷 뉴스레터 구독하러 가기',
     recommend: '당신에게 추천드려요',
     goToGoogleForm: '설문조사 하러가기',
+    predictDrinkIt: `당신이 생각하는\n 당신의 DrinkIt을 골라보세요!`,
     mainTitleEng: 'Let\'s find out what kind of liquor and space looks like me',
     whatIsMyDrinkItEng: 'What Is My 🥂 DrinkIt?',
     startTestEng: 'START DITI TEST',
@@ -29,4 +30,5 @@ export default {
     goToSubscribeEng: 'Subscribe to the Drinkit Newsletter',
     recommendEng: 'I recommend it to you',
     goToGoogleFormEng: 'Go to Survey',
+    predictDrinkItEng: 'Predict your DrinkIt!'
 }
