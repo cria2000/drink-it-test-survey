@@ -28,11 +28,11 @@ export const MainPage = (props: Props) => {
 
     return (
         <div className="main_page">
-            <div className="change_language">
-                <button onClick={handleClickChangeLanguageButton}><div className="button_change"/>
-                    <div>{isKorean ? strings.eng : strings.ko}</div>
-                </button>
-            </div>
+            {/*<div className="change_language">*/}
+            {/*    <button onClick={handleClickChangeLanguageButton}><div className="button_change"/>*/}
+            {/*        <div>{isKorean ? strings.eng : strings.ko}</div>*/}
+            {/*    </button>*/}
+            {/*</div>*/}
             <img className="main_page_header_logo" alt='drink_it_header' src={require('./Images/drinkItHeader.png')} />
             <div className="main_title">
                 <div>{isKorean ? messages.mainTitle : messages.mainTitleEng}</div>
