@@ -15,6 +15,8 @@ export default {
     recommend: '당신에게 추천드려요',
     goToGoogleForm: '설문조사 하러가기',
     predictDrinkIt: `당신이 생각하는\n 당신의 DrinkIt을 골라보세요!`,
+    predictWell: '당신의 드링킷을 잘 맞추셨네요👏',
+    commentWithPredict: '당신이 선택했던 드링킷도 궁금하신가요?',
     mainTitleEng: 'Let\'s find out what kind of liquor and space looks like me',
     whatIsMyDrinkItEng: 'What Is My 🥂 DrinkIt?',
     startTestEng: 'START DITI TEST',

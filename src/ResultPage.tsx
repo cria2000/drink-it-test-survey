@@ -14,15 +14,16 @@ export const ResultPage = ({selectedOptions}: Props) => {
     const [kakaoInit, setKakaoInit] = useState<boolean>(false)
     const TRACKING_ID = process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID ?? ''
 
-    const predictedId = useReactiveVar(predictVar)
     const isKorean = useReactiveVar(languageVar) === ELangauge.KOREAN
+    const resultPresetValue = isKorean ? resultPreset : resultEngPreset
+    const predictedId = useReactiveVar(predictVar)
+    const predictDrinkIt = resultPresetValue?.find((data) => data?.id === predictedId)
 
     const selectedFirst = selectedOptions?.first?.i > selectedOptions?.first?.e ? EResult.I : EResult.E
     const selectedSecond = selectedOptions?.second?.s > selectedOptions?.second?.n ? EResult.S : EResult.N
     const selectedThird = selectedOptions?.third?.t > selectedOptions?.third?.f ? EResult.T : EResult.F
-    const selectedFourth = selectedOptions?.fourth?.j > selectedOptions?.fourth?.p ? EResult.J : EResult.P
 
-    const resultPresetValue = isKorean ? resultPreset : resultEngPreset
+    const selectedFourth = selectedOptions?.fourth?.j > selectedOptions?.fourth?.p ? EResult.J : EResult.P
     const resultIndex = Array.from(resultMap?.keys())?.findIndex(value => value?.first === selectedFirst && value?.second === selectedSecond
     && value?.third === selectedThird && value?.fourth === selectedFourth)
     const result = resultPresetValue[resultIndex ?? 0]
@@ -146,7 +147,29 @@ export const ResultPage = ({selectedOptions}: Props) => {
             ReactGA.event({
                 category: "Event",
                 action: "click arc link and incorrect Predict",
-                label: "click arc link and   incorrect Predict"
+                label: "click arc link and incorrect Predict"
+            })
+        }
+    }
+
+    const handleClickPredictLink = () => {
+        ReactGA.event({
+            category: "Event",
+            action: "Press Predict Arc Link",
+            label: "Watch Predict Arc",
+        });
+        if(predictedId != undefined && predictedId === result?.id){
+            ReactGA.event({
+                category: "Event",
+                action: "click Predict arc link and correct Predict",
+                label: "click Predict arc link and correct Predict"
+            })
+        }
+        else if(predictedId != undefined && predictedId != result?.id){
+            ReactGA.event({
+                category: "Event",
+                action: "click predict arc link and incorrect Predict",
+                label: "click predict arc link and incorrect Predict"
             })
         }
     }
@@ -166,11 +189,25 @@ export const ResultPage = ({selectedOptions}: Props) => {
                 <div className="recommend_space_address">{result?.spaceAddress}</div>
                 { result?.spaceImg && <img className="result_page_space_image" alt='space' src={require(`./Images/${result?.spaceImg}`)} /> }
             </div>
+            {predictedId !== result?.id && predictDrinkIt !== undefined &&
+            <div className='result_page_recommend predicted'>
+                <div className="recommend_message">{isKorean ? messages.commentWithPredict : messages.commentWithPredict}</div>
+                <div className="recommend_space_drink">{`<${predictDrinkIt?.recommendSpace}>${isKorean ? '의' : `'s`} ${predictDrinkIt?.recommendDrink}`}</div>
+                <div className="recommend_space_address">{predictDrinkIt?.spaceAddress}</div>
+                { result?.spaceImg && <img className="result_page_space_image" alt='space' src={require(`./Images/${predictDrinkIt?.spaceImg}`)} /> }
+            </div>
+            }
             <div className="result_page_drink_it_link_container">
+                {predictedId === result?.id && <div>{messages.predictWell}</div>}
                 <div className="result_page_news_letter">
                     <span>{isKorean ? messages.noticeNewsLetter({result: result?.recommendSpace}) : messages.noticeNewsLetterEng({result: result?.recommendSpace})}</span>
                     <a className="result_page_links" href={result?.relevantLink} onClick={handleClickArcLink}>{isKorean ? messages.linkToNewsLetterSentence({result: result?.recommendSpace}) : messages.linkToNewsLetterSentenceEng({result: result?.recommendSpace}) }</a>
                 </div>
+                {predictedId !== result?.id && predictDrinkIt !== undefined &&
+                    <div className="result_page_news_letter predicted">
+                        <span>{messages.noticeNewsLetter({result : predictDrinkIt?.recommendSpace})}</span>
+                        <a className="result_page_links" href={predictDrinkIt?.relevantLink} onClick={handleClickArcLink}>{isKorean ? messages.linkToNewsLetterSentence({result: predictDrinkIt?.recommendSpace}) : messages.linkToNewsLetterSentenceEng({result: predictDrinkIt?.recommendSpace}) }</a>
+                    </div>}
                 <div className="result_page_subscribe_link">
                     <span>{isKorean ? messages.interestInMore : messages.interestInMoreEng}</span>
                     <a className="result_page_links" href={`https://page.stibee.com/subscriptions/148567`} onClick={handleClickSubscription}>{isKorean ? messages?.goToSubscribe : messages.goToSubscribeEng}</a>
