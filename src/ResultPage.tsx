@@ -177,7 +177,7 @@ export const ResultPage = ({selectedOptions}: Props) => {
                 </div>
             </div>
                 <div className="column">
-                    <a className="result_page_links" href={`https://forms.gle/9FKxCpUscxUdWJi56`}>{isKorean ? messages?.goToGoogleForm : messages.goToGoogleFormEng}</a>
+                    {/*<a className="result_page_links" href={`https://forms.gle/9FKxCpUscxUdWJi56`}>{isKorean ? messages?.goToGoogleForm : messages.goToGoogleFormEng}</a>*/}
                     <button className='result_page_share_button' id='kakao-link-btn' onClick={shareKakao}><img className="kakao_icon" src={require('./Images/kakao.png')}/>{isKorean ? '카카오톡으로 공유하기' : 'share with kakaoTalk'}</button>
                     </div>
             </div>
