@@ -67,6 +67,20 @@ export const ResultPage = ({selectedOptions}: Props) => {
                 }
             ]
         })
+        if(predictedId != undefined && predictedId === result?.id){
+            ReactGA.event({
+                category: "Event",
+                action: "share with kakao and correct Predict",
+                label: "share with kakao and correct Predict"
+            })
+        }
+        else if(predictedId != undefined && predictedId != result?.id){
+            ReactGA.event({
+                category: "Event",
+                action: "share with kakao and incorrect Predict",
+                label: "share with kakao and incorrect Predict"
+            })
+        }
     }
 
 
