@@ -137,8 +137,8 @@ export const questionPreset : QuestionType[] = [
     {id: 11, question: '오늘 할 일을 전부 다 마치고 술이 땡길 때,',
         firstOption: '아늑한 나의 집에 가서 넷플릭스보며 혼맥해야지!',
         secondOption:'친구들 모여서 다같이 치맥파티!',
-        onClickFirstOption: onClickE,
-        onClickSecondOption: onClickI
+        onClickFirstOption: onClickI,
+        onClickSecondOption: onClickE
 
     }
 ]
