@@ -26,7 +26,7 @@ export const ResultPage = ({selectedOptions}: Props) => {
     const selectedFourth = selectedOptions?.fourth?.j > selectedOptions?.fourth?.p ? EResult.J : EResult.P
     const resultIndex = Array.from(resultMap?.keys())?.findIndex(value => value?.first === selectedFirst && value?.second === selectedSecond
     && value?.third === selectedThird && value?.fourth === selectedFourth)
-    const result = resultPresetValue[resultIndex ?? 0]
+    const result = resultPresetValue?.sort((a,b) => a.id < b.id ? -1 : 0)?.[resultIndex ?? 0]
 
        useEffect(() => {
         const script = document.createElement('script')
