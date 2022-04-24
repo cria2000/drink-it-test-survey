@@ -259,7 +259,7 @@ export const resultPreset : ResultType[] = [
         id: 0,
         drinkName: '매혹적인 칵테일',
         drinkEnName: "Jack Rose",
-        spaceName: '화려한 공간',
+        spaceName: '사교적인 공간',
         spaceAddress: 'ᑯ 서울 서초구 반포대로28길 56-3 지하 1층',
         content: `🥂 누가 뭐래도 당신은 인기쟁이! 매혹적인 칵테일 같은 존재다. \n
          🥂 정 빼면 시체! 사람들과 행복하게 지내는 게 좋다. 다른 사람들의 감정을 매우 잘 배려하기도 하다. \n
@@ -277,7 +277,7 @@ export const resultPreset : ResultType[] = [
         id: 1,
         drinkName: '기분 좋은 산미의 와인',
         drinkEnName: "Natural Orange",
-        spaceName: '밝고 쾌활한 공간',
+        spaceName: '자유롭고 쾌활한 공간',
         spaceAddress: 'ᑯ 서울 중구 창경궁로1길 38 4층',
         content: `🥂 즐겁다! 갑자기 흥얼거리면 즉흥적으로 춤을 추는 사람이 있다? \n그것은 바로 당신. 천성이 연예인 기질이다. \n
         🥂 다른 사람과는 비교할 수 없는 거부할 수 없는 매력을 지니고 있다. 다른 사람들을 위로하고 용기를 북돋아 주는 데에 원탑 \n
@@ -293,9 +293,9 @@ export const resultPreset : ResultType[] = [
     },
     {
         id: 2,
-        drinkName: '깊은 위스키',
+        drinkName: '뛰어난 풍미의 위스키',
         drinkEnName: "Cuvee Cask",
-        spaceName: '깔끔한 공간',
+        spaceName: `관리가 잘 된\n 깔끔한 공간`,
         spaceAddress: 'ᑯ 서울 서초구 반포대로28길 56-3 지하 1층',
         content: `
         🥂 당신은 본투비 리더! 감정보다는 책임감을 가지고 조직을 이끌어 가는 완벽주의자 워커홀릭\n
@@ -311,9 +311,9 @@ export const resultPreset : ResultType[] = [
     },
     {
         id: 3,
-        drinkName: '상큼한 와인',
+        drinkName: '쿨하고 상큼한 와인',
         drinkEnName: 'Kuehling Gillot \nNierstein Riesling Trocken',
-        spaceName: `날씨 좋은 \n야외의 공간`,
+        spaceName: `날씨 좋고 모험적인\n야외의 공간`,
         spaceAddress: 'ᑯ 서울특별시 용산구 한강대로40길 19-8 1층',
         content: `🥂 여러 사람이 모인 행사에서 당신은 홍길동, 이리 번쩍 저리 번쩍 어딜가나 당신이 있다. 친화력 최강 인싸! \n
         🥂 뒤끝 없이 쿨한 당신, 빙빙 돌려말하고 추상적으로 말하는 것보다는 돌직구로 말하는 게 좋다.\n
@@ -328,7 +328,7 @@ export const resultPreset : ResultType[] = [
     },
     {
         id: 4,
-        drinkName: '임금의 술 왕주',
+        drinkName: `정의로운 임금의 술\n 왕주`,
         drinkEnName: "King's Drink",
         spaceName: `정겨운 이야기가 \n가득한 공간`,
         spaceAddress: 'ᑯ 서울 마포구 서강로9길 60',
@@ -345,9 +345,9 @@ export const resultPreset : ResultType[] = [
     },
     {
         id: 5,
-        drinkName: '달콤한 칵테일',
+        drinkName: `달콤한 애정 가득\n칵테일`,
         drinkEnName: "Banana",
-        spaceName: '파리를 닮은 공간',
+        spaceName: `웃음이 가득한\n파리를 닮은 공간`,
         spaceAddress: 'ᑯ 서울 중구 창경궁로1길 38 4층',
         content: `🥂 당신과 같은 사람들이 모여있다면, 지구는 애정으로 폭발해버릴지도 모른다.\n 아기자기 해피바이러스 인싸!\n
         🥂 당신의 프라임 세포는 감성세포! 남이 울면 같이 울고 남이 기쁘면 나도 기쁘다. 사람들을 너무 알고 싶고, 전부 다 퍼주고 싶고, 공감도 너무너무 쉽다. 그래서 감정이 가끔 롤러코스터를 타기도 하는 당신.\n
@@ -362,9 +362,9 @@ export const resultPreset : ResultType[] = [
     },
     {
         id: 6,
-        drinkName: '묵직한 칵테일',
+        drinkName: `대담하고 묵직한 칵테일`,
         drinkEnName: "Mr. Carmen Negroni",
-        spaceName: `'킹스맨'의 공간`,
+        spaceName: `리더의 정석, '킹스맨'의 공간`,
         spaceAddress: 'ᑯ 서울 마포구 와우산로15길',
         content: `🥂 리더의 정석. 리더 그 자체. 학창 시절에 꼭 한 자리하고 팀플에서 운전 기사가 되는 유노윤호\n근데 이거 다 나서는 거 좋아서 그런 게 아니라 남이 하는 거 마음에 안 들어서 그런 거 아시죠?\n 
         🥂 게임을 심심해서 한다고? 게임은 무조건 이겨야지! 이겨야 직성이 풀리는 인정사정 없는 스타일이다. \n
@@ -379,21 +379,21 @@ export const resultPreset : ResultType[] = [
     },
     {
         id: 7,
-        drinkName: '내추럴 와인',
-        drinkEnName: 'Natural \nWhite Wine',
-        spaceName: `무심한 듯\n 친절한 공간`,
-        spaceAddress: 'ᑯ 서울 관악구 봉천동 1625-16 3층',
+        drinkName: `개성있는 맛의 와인`,
+        drinkEnName: `Sassy \nCidre Rose`,
+        spaceName: `일반적이지 않은\n독특한 공간`,
+        spaceAddress: 'ᑯ 서울 종로구 대명1길 16-4',
         content:  `🥂 당신은 귀여운 관종! 또라이 같다는 말.. 어쩌면 기분이 좋을지도?\n
         🥂 본인 생각과 다른 것 같다면 일단 묻고 본다. '왜?', '아니 근데', '엥?' 정신 차려보니 당신은 그들을 열심히 설득하고 있다.\n
         🥂 인스타 스토리는 올리고 싶은 거 다 올리는데 또 남들 다 하는 챌린지 같은 건 절대 안 한다.\n
         🥂 은근히 특이한 사람에게 끌린다. 감정을 질질 끌기보다는 쿨하게 받아치는 모습에 당신은 이미 빠져들고 있다!\n\n
-        당신과 같이 무심하지만, 친절한 공간에서 내추럴한 화이트 와인 어떠세요?
+        일반적인 바와는 느낌이 다른 독특한 분위기의 공간에서, 개성있게 톡톡 튀는 와인 한 잔 어떠세요?
         `,
-        recommendDrink: '내추럴 화이트 와인',
-        recommendSpace: '낙성',
-        relevantLink: 'https://stibee.com/api/v1.0/emails/share/gDkfBFjS2kPI9xzOA_QssqGu66mjqg==',
-        drinkImg: '7_drink.jpg',
-        spaceImg: '낙성.jpg',
+        recommendDrink: '쎄시 시드로 로제',
+        recommendSpace: '독일주택',
+        relevantLink: 'https://stibee.com/api/v1.0/emails/share/EzIsFu_VlUOFRcZ0SNjuagQ1kO0iZA==',
+        drinkImg: '7_1_drink.jpg',
+        spaceImg: '독일주택.jpg',
     },
     {
         id: 8,
@@ -414,32 +414,32 @@ export const resultPreset : ResultType[] = [
     },
     {
         id: 9,
-        drinkName: `바흐의 음악을 곁들인 \n와인`,
-        drinkEnName: 'Geyser \npeak cabernet sauvignon',
-        spaceName: '감각적인 공간',
-        spaceAddress: 'ᑯ 강남구 도산대로 27길 21',
+        drinkName: `처음 먹는 사람들에게도 적당한\n 부드럽고 달콤한 럼`,
+        drinkEnName: `Cadenhead's Classic Rum`,
+        spaceName: `프라이빗하고\n트렌디한 공간`,
+        spaceAddress: 'ᑯ 서울 마포구 성미산로29안길 26 지하 1층',
         content: `🥂 이런 사람과 싸운다면, 그건 상대방의 문제일 경우 99%, 당신은 평화가 좋다. \n
         🥂 사람 많은 곳은 딱 질색, 혼자 있는 것이 좋다. 침대와 환상의 짝궁이다! 인생의 대부분의 시간을 침대 위에서 보내는 사람 1등\n
         🥂 관심 받는 게 싫은데, 관심 받는 게 좋다. 전부 귀찮고 게으른데, 또 완벽주의다. 배려는 인생의 모토지만, 개인주의. 알 수 없는 당신!\n
         🥂 과묵하고 까칠해보일 수 있지만, 사실 속은 물렁물렁 말랑카우\n\n
-        다양한 아이디어와 다채로우면서도 감각적인 당신, 바흐의 음악을 들으며 와인 한 잔으로 영감을 받아가는 건 어떠세요?`,
-        recommendDrink: '가이서 픽 까베르네 소비뇽',
-        recommendSpace: '몽크투바흐',
-        relevantLink: 'https://stibee.com/api/v1.0/emails/share/XDA70sXfmcaj_WSomitVRjsrmHP_Cw==',
-        drinkImg: '9_drink.jpg',
-        spaceImg: '몽크투바흐.jpg',
+        사람 많은 곳은 싫어하지만 다양한 아이디어와 감각적인 당신을 위한 프라이빗하고 트렌디한 공간에서, 부드럽고 달콤한 럼 한 잔으로 영감을 받아가는 건 어떠세요?`,
+        recommendDrink: '카덴헤드 클래식',
+        recommendSpace: 'Bar Rough',
+        relevantLink: 'https://stibee.com/api/v1.0/emails/share/Brp-Se1ap-KuPaWbks3bOz_bNJw4NQ==',
+        drinkImg: '9_1_drink.jpg',
+        spaceImg: '바러프.jpg',
     },
     {
         id: 10,
-        drinkName: '담백한 막걸리',
-        drinkEnName: 'Song Myungseop\n Rice Wine',
+        drinkName: '담백하고 익숙한 막걸리',
+        drinkEnName: `Song Myungseop\n Rice Wine`,
         content: `🥂 '혼자서도 잘해요' 간섭은 철저히 사양하는 계획쟁이 당신\n
         🥂 허튼 짓 하지마라. 허튼 짓을 무엇보다 싫어하며, 다른 사람들이 할 일 들을 빨리 인지하여 실행에 옮기기를 원한다. 
         그래서 당신도 해야된다 생각이 들면 바로 한다. 한 달 남은 과제? 당장 해야지.\n
         🥂 변화는 싫고 체계적인게 좋아! 새로운 도전보다는 늘 먹던 게 좋다.\n
         🥂 연애는 어려워ㅠ 사실적인 것이 좋고 감정 표현에 서툴러 연인과도 교류하기가 어려울 수 있다. 대놓고 다정한 사람에게 당신은 이미 푹 빠져버렸다.\n\n
         차분하고 조용한 공간에서 담백한 막걸리 한 잔 어떠세요?`,
-        spaceName: '차분한 공간',
+        spaceName: '차분하고 조용한 공간',
         spaceAddress: 'ᑯ 서울 강남구 언주로168길 22 1층',
         recommendDrink: '송명섭 막걸리',
         recommendSpace: '묵전',
@@ -466,9 +466,9 @@ export const resultPreset : ResultType[] = [
     },
     {
         id: 12,
-        drinkName: '강한 신념의 겨울 소주',
-        drinkEnName: "Winter Soju",
-        spaceName: '사색의 공간',
+        drinkName: `부드럽고 달콤한 흑맥주`,
+        drinkEnName: "Rasputin Comfana",
+        spaceName: `감수성 가득\n봄을 맛볼 수 있는 공간`,
         spaceAddress: 'ᑯ 서울 영등포구 도림로 435 성문빌딩 1층',
         content: `🥂 우리 함께 만들어가요🎵 아름다운 세상~🎶 다함께 행복한 세상을 꿈꾸는 배려쟁이\n
         🥂 조용한 게 좋은데, 또 한 방울의 관심은 마다하지 않는다. 아니, 오히려 마음 한 구석에서는 원하고 있다!\n
@@ -476,41 +476,41 @@ export const resultPreset : ResultType[] = [
         🥂 그러나 당신은 당신만의 선이 있다. 아무리 친해도 넘어서는 안되는 선!\n
         🥂 공감 능력이 매우 뛰어나다. 당신의 프라임 세포는 감성세포! 밤이 되면 감수성이 폭발한다\n\n
         주방장과 함께 이야기를 나눌 수 있는 카운터석과 생각을 비우고 혼자만의 시간을 가질 수 있는 사색의 공간에서, 당신의 강한 신념처럼 오랜 시간 공들여 만들어지는 겨울소주 어떠세요?`,
-        recommendDrink: '겨울소주',
-        recommendSpace: '사적공간',
-        relevantLink: 'https://stibee.com/api/v1.0/emails/share/gDkfBFjS2kPI9xzOA_QssqGu66mjqg==',
+        recommendDrink: '라스푸틴 꼼파냐',
+        recommendSpace: '독일주택',
+        relevantLink: 'https://stibee.com/api/v1.0/emails/share/EzIsFu_VlUOFRcZ0SNjuagQ1kO0iZA==',
         drinkImg: '12_drink.jpg',
-        spaceImg: '사적공간.jpg',
+        spaceImg: '독일주택.jpg',
     },
     {
         id: 13,
-        drinkName: '과일향의 위스키',
-        drinkEnName: "Glanfidic",
-        spaceName: '클래식 음악의 공간',
-        spaceAddress: 'ᑯ 강남구 도산대로 27길 21',
+        drinkName: '계절마다 스토리가 다른 진토닉',
+        drinkEnName: "Z & T",
+        spaceName: `햇살이 들어오는 한낮,\n바텐더 4명의 철학이 담긴 공간`,
+        spaceAddress: 'ᑯ 서울 강남구 도산대로55길 26',
         content: `🥂 겉으로는 수줍음쟁이지만, 사실 안에는 열정의 불꽃이 숨어져 있는 당신! 영화 '인사이드아웃'은 어떠신가요?\n
         🥂 친구에게 답장이 안 올 때 잘못 보냈나 고민하기 부문 1등, 할 말 있다는 이야기 들었을 때 인생 한 번 1회독 해보기 1등\n
         🥂 당신은 프로 과몰입러! 조금 생각하면 소설 한 편도 뚝딱 나온다. 드라마 OST 들으며 가끔 오열하곤 한다.\n
         🥂 공감 능력이 뛰어나고 다정하다. 마음이 따뜻해서 아이들과도 잘 지낸다. 그러나 낯선 이들에게는 의심병이 슬금슬금!\n\n 
         감성적이고 깊은 통찰력을 지닌 당신, 술과 음악을 사랑한다면 클래식 감상회를 즐길 수 있는 공간에서 약간의 과일향과 함께 즐길 수 있는 위스키 한 잔 어떠세요?`,
-        recommendDrink: '글렌피딕',
-        recommendSpace: '몽크투바흐',
-        relevantLink: 'https://stibee.com/api/v1.0/emails/share/XDA70sXfmcaj_WSomitVRjsrmHP_Cw==',
-        drinkImg: '13_drink.jpg',
-        spaceImg: '몽크투바흐.jpg',
+        recommendDrink: 'Z & T(진토닉)',
+        recommendSpace: '제스트',
+        relevantLink: 'https://stibee.com/api/v1.0/emails/share/s5buI9j4NOL1kq7Cz6QqawwGvFa4Yg==',
+        drinkImg: '13_1_drink.jpg',
+        spaceImg: '제스트.jpg',
     },
     {
         id: 14,
-        drinkName: '다양한 레이어의 칵테일',
+        drinkName: '색다르고\n다양한 레이어의 칵테일',
         drinkEnName: "Rosa Paradiso",
-        spaceName: '클래식한 공간',
+        spaceName: `완벽한 바의 분위기를\n담고 있는 공간`,
         spaceAddress: 'ᑯ 서울 마포구 와우산로15길',
         content: `
         🥂 완벽주의의 인간화, 모든 것을 전부 다 이해해야 속이 시원한 당신. 인생은 마이웨이! 리액션 페르소나는 필수!\n
         🥂 아 진짜? 하는데 사실 마음 속으로는 공감이 전혀 안되고 있다. 진짜 친구에게는 공감보단 문제 해결 방법으로 애정을 표현한다.\n
         🥂 예술의 숨겨진 해석이 너무 좋아! 영화보고 난 뒤 검색으로 숨겨진 해석과 색다른 해설을 보며 감탄하곤 한다.  \n
         🥂 남 눈치같은 거 안 보지! 남들에게 관심없지! 그 관심과 눈치 내가 좋아하는 사람에게 몰빵하겠어!\n\n
-        클래식한 공간에서, 혼자 시간을 보내며 색다르고 다양한 레이어의 칵테일 한 잔 어떠세요? `,
+        완벽하게 바의 분위기를 담고 있는 공간에서, 혼자 시간을 보내며 색다르고 다양한 레이어의 칵테일 한 잔 어떠세요? `,
         recommendDrink: '로사 파라디소',
         recommendSpace: '디스틸',
         relevantLink: 'http://naver.com',
@@ -519,17 +519,17 @@ export const resultPreset : ResultType[] = [
     },
     {
         id: 15,
-        drinkName: '사케',
+        drinkName: `독창적인 특색을 가지는\n사케`,
         drinkEnName: "春霞 純米酒 赤ラベル",
-        spaceName: '소박한 공간',
+        spaceName: '사적이고 소박한 공간',
         spaceAddress: 'ᑯ 서울 영등포구 도림로 435 성문빌딩 1층',
         content: `🥂 '평범함을 거부한다! 당신은 당신만의 독창성과 창의력을 가진다. 그리고 그것이 꽤 좋다..!\n
         🥂 먼저 대화하기는 싫지만, 당신이 좋아하는 분야에 대해서는 말을 많이 한다. 100분 토론 완전 가능.\n
         🥂 머릿속에 아이디어가 대략 오조 오억 오천 오백만개\n
         🥂 논리를 사랑한다. 논리 없는 무지랭이들을 보면 당신도 모르게 화가 치민다. \n
         🥂 웬만하면 연락 잘 안함. 웬만하면 상처 안 받음. 웬만하면 관심 없음. 웬만하면 신경 안 씀.\n\n
-        혼자 사색을 즐길 수 있는 아늑하고 소박한 공간에서 조금씩 음미하며 마실 수 있는 사케 어떠세요?`,
-        recommendDrink: '사케',
+        혼자 사색을 즐길 수 있는 아늑하고 소박한 공간에서 조금씩 음미하며 사케만의 독창적인 특색을 느껴보는 것은 어떠세요?`,
+        recommendDrink: '하루가스미 준마이 레드라벨 ',
         recommendSpace: '사적공간',
         relevantLink: 'https://stibee.com/api/v1.0/emails/share/gDkfBFjS2kPI9xzOA_QssqGu66mjqg==',
         drinkImg: '15_drink.jpg',
