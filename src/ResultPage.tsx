@@ -56,14 +56,14 @@ export const ResultPage = ({selectedOptions}: Props) => {
                 description: '🥂당신과 잘 어울리는 공간과 술을 알아보세요🥂',
                 imageUrl: './Images/drinkItHeader.png',
                 link:{
-                    webUrl: 'https://heartfelt-licorice-10119b.netlify.app',
+                    webUrl: 'https://cheerful-rabanadas-8301ea.netlify.app',
                 }
             },
             buttons: [
                 {
                     title: 'DrinkIt 테스트하러가기',
                     link: {
-                        webUrl: 'https://heartfelt-licorice-10119b.netlify.app',
+                        webUrl: 'https://cheerful-rabanadas-8301ea.netlify.app',
                     }
                 }
             ]
@@ -189,25 +189,25 @@ export const ResultPage = ({selectedOptions}: Props) => {
                 <div className="recommend_space_address">{result?.spaceAddress}</div>
                 { result?.spaceImg && <img className="result_page_space_image" alt='space' src={require(`./Images/${result?.spaceImg}`)} /> }
             </div>
-            {/*{predictedId !== result?.id && predictDrinkIt !== undefined &&*/}
-            {/*<div className='result_page_recommend predicted'>*/}
-            {/*    <div className="recommend_message">{isKorean ? messages.commentWithPredict : messages.commentWithPredict}</div>*/}
-            {/*    <div className="recommend_space_drink">{`<${predictDrinkIt?.recommendSpace}>${isKorean ? '의' : `'s`} ${predictDrinkIt?.recommendDrink}`}</div>*/}
-            {/*    <div className="recommend_space_address">{predictDrinkIt?.spaceAddress}</div>*/}
-            {/*    { result?.spaceImg && <img className="result_page_space_image" alt='space' src={require(`./Images/${predictDrinkIt?.spaceImg}`)} /> }*/}
-            {/*</div>*/}
-            {/*}*/}
+            {predictedId !== result?.id && predictDrinkIt !== undefined &&
+            <div className='result_page_recommend predicted'>
+                <div className="recommend_message">{isKorean ? messages.commentWithPredict : messages.commentWithPredict}</div>
+                <div className="recommend_space_drink">{`<${predictDrinkIt?.recommendSpace}>${isKorean ? '의' : `'s`} ${predictDrinkIt?.recommendDrink}`}</div>
+                <div className="recommend_space_address">{predictDrinkIt?.spaceAddress}</div>
+                { result?.spaceImg && <img className="result_page_space_image" alt='space' src={require(`./Images/${predictDrinkIt?.spaceImg}`)} /> }
+            </div>
+            }
             <div className="result_page_drink_it_link_container">
                 {predictedId === result?.id && <div>{messages.predictWell}</div>}
                 <div className="result_page_news_letter">
                     <span>{isKorean ? messages.noticeNewsLetter({result: result?.recommendSpace}) : messages.noticeNewsLetterEng({result: result?.recommendSpace})}</span>
                     <a className="result_page_links" href={result?.relevantLink} onClick={handleClickArcLink}>{isKorean ? messages.linkToNewsLetterSentence({result: result?.recommendSpace}) : messages.linkToNewsLetterSentenceEng({result: result?.recommendSpace}) }</a>
                 </div>
-                {/*{predictedId !== result?.id && predictDrinkIt !== undefined &&*/}
-                {/*    <div className="result_page_news_letter predicted">*/}
-                {/*        <span>{messages.noticeNewsLetter({result : predictDrinkIt?.recommendSpace})}</span>*/}
-                {/*        <a className="result_page_links" href={predictDrinkIt?.relevantLink} onClick={handleClickArcLink}>{isKorean ? messages.linkToNewsLetterSentence({result: predictDrinkIt?.recommendSpace}) : messages.linkToNewsLetterSentenceEng({result: predictDrinkIt?.recommendSpace}) }</a>*/}
-                {/*    </div>}*/}
+                {predictedId !== result?.id && predictDrinkIt !== undefined &&
+                    <div className="result_page_news_letter predicted">
+                        <span>{messages.noticeNewsLetter({result : predictDrinkIt?.recommendSpace})}</span>
+                        <a className="result_page_links" href={predictDrinkIt?.relevantLink} onClick={handleClickPredictLink}>{isKorean ? messages.linkToNewsLetterSentence({result: predictDrinkIt?.recommendSpace}) : messages.linkToNewsLetterSentenceEng({result: predictDrinkIt?.recommendSpace}) }</a>
+                    </div>}
                 <div className="result_page_subscribe_link">
                     <span>{isKorean ? messages.interestInMore : messages.interestInMoreEng}</span>
                     <a className="result_page_links" href={`https://page.stibee.com/subscriptions/148567`} onClick={handleClickSubscription}>{isKorean ? messages?.goToSubscribe : messages.goToSubscribeEng}</a>

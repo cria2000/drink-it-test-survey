@@ -31,7 +31,7 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://heartfelt-licorice-10119b.netlify.app",
+  "homepage": "https://cheerful-rabanadas-8301ea.netlify.app",
   "eslintConfig": {
     "extends": [
       "react-app",
