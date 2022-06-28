@@ -2,6 +2,27 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Project Introduction
+이 프로그램은 자신과 잘 어울리는 술과 공간을 찾아볼 수 있는 DITI 성격 유형 테스트입니다.
+뉴스레터 'drink It'에서 소개되었던 술과 공간들을 바탕으로 하고 있습니다.
+
+## How to run a program
+프로그램을 clone 받으신 뒤에, HCI_2018008722_유수영_Project1Programming로 이동하여 아래의 명령어를 실행하여 프로그램을 실행해주세요.
+
+- .env 파일이 없어 카카오톡 공유하기 및 구글 어낼리틱스의 작동은 원활하지 않을 수 있습니다.
+- 기본적인 사이트의 작동은 문제 없이 잘 작동합니다.
+
+1. 필요한 package 설치
+yarn install
+
+2. 프로그램 실행
+yarn start
+
+
+### 만약 실행이 어렵다면, 아래의 링크를 통해서 프로그램을 확인하실 수 있습니다.
+https://cheerful-rabanadas-8301ea.netlify.app
+
+
 ## Available Scripts
 
 In the project directory, you can run:
